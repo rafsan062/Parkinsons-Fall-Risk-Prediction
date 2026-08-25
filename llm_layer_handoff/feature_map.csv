@@ -1,0 +1,26 @@
+feature_name,short_name,description,data_type,value_encoding_or_scale
+No_of_years,PD Duration,Years since Parkinson's disease diagnosis,continuous_integer,Non-negative integer years
+Age,Age,Patient age,continuous_integer,Years
+Postural instability present at dx?,Postural Instability at Dx,Postural instability present at diagnosis,ordinal_categorical,0 = No; 1 = Yes; 2 = Unknown
+Rigidity present at diagnosis?,Rigidity at Dx,Rigidity present at diagnosis,ordinal_categorical,0 = No; 1 = Yes; 2 = Unknown
+Dopaminergic therapy started for participant,Dopaminergic Therapy,Dopaminergic therapy started,binary_categorical,0 = No; 1 = Yes
+MoCA Total Score,MoCA,Montreal Cognitive Assessment (MoCA) total cognition score,continuous_numeric,0-30; higher = better cognition
+Freezing of gait (peak severity),FOG (Freezing of Gait),Self-reported severity of freezing of gait in the past 12 months (FRZGT12M),ordinal_numeric,0 = None; 1 = Rare freezing (may have start hesitation); 2 = Occasional freezing when walking; 3 = Frequent freezing with occasional falls; 4 = Frequent falls from freezing
+lightheaded after standing,Lightheadedness on Standing,Orthostatic lightheadedness on standing (SCOPA-AUT),ordinal_numeric,0 = never; 1 = sometimes; 2 = regularly; 3 = often
+fainted,Fainting,Fainting frequency (SCOPA-AUT),ordinal_numeric,0 = never; 1 = sometimes; 2 = regularly; 3 = often
+Total Depression Score,GDS-15,Geriatric Depression Scale (GDS-15) total depression score,continuous_numeric,0-15; higher = more depressive burden
+able_weighted_score,Mobility Composite,"Gaussian-weighted composite score (μ=2.5, σ=1.2) representing independent transitional mobility capability derived from 8 Neuro-QoL lower extremity functional items",continuous_numeric,Higher scores = higher capability within the transitional mobility zone
+MDS-UPDRS PartIV score,UPDRS-IV Total,MDS-UPDRS Part IV total motor complications score (dyskinesia and motor fluctuations),continuous_numeric,0-24; higher = more motor complications
+MDS-UPDRS Part I Score,UPDRS-I Total,MDS-UPDRS Part I (rater-completed) total non-motor experiences of daily living score,continuous_numeric,0-24; higher = more non-motor burden
+BMI,BMI,Body mass index,continuous_numeric,kg/m^2
+Daytime_Sleepiness,Daytime Sleepiness,Daytime sleepiness (MDS-UPDRS Part I),ordinal_numeric,0 = Normal (no daytime sleepiness); 1 = Slight (can resist and stay awake); 2 = Mild (sometimes fall asleep when alone/relaxing); 3 = Moderate (sometimes fall asleep when should not e.g. while eating); 4 = Severe (often fall asleep when should not)
+Urinary_Problems,Urinary Problems,Urinary problems (MDS-UPDRS Part I),ordinal_numeric,0 = Normal (no urine control problems); 1 = Slight (urinate often/urgently no daily activity impact); 2 = Mild (some difficulties with daily activities no accidents); 3 = Moderate (a lot of difficulties including urine accidents); 4 = Severe (cannot control urine use protective garment or bladder tube)
+Gait,Gait,Clinician-rated gait impairment (MDS-UPDRS Part III),ordinal_numeric,0 = Normal (no problems); 1 = Slight (independent walking with minor impairment); 2 = Mild (independent walking with substantial impairment); 3 = Moderate (requires walking aid but not a person); 4 = Severe (cannot walk without another person's assistance); 101 = unable to rate
+Postural_Stability,Postural Stability,Clinician-rated postural stability (MDS-UPDRS Part III),ordinal_numeric,0 = Normal (recovers with 1-2 steps); 1 = Slight (3-5 steps recovers unaided); 2 = Mild (>5 steps recovers unaided); 3 = Moderate (stands safely but falls if not caught by examiner); 4 = Severe (very unstable loses balance spontaneously); 101 = unable to rate
+Hoehn_And_Yahr_Stage,H&Y Stage,Hoehn & Yahr disease stage,ordinal_numeric,0 = Asymptomatic; 1 = Unilateral involvement only; 2 = Bilateral involvement without balance impairment; 3 = Mild-moderate with postural instability but physically independent; 4 = Severe disability but can walk/stand unassisted; 5 = Wheelchair bound or bedridden unless aided; 101 = unable to rate
+Postural_hypotension,Postural Hypotension,Postural (orthostatic) hypotension flag,ordinal_categorical,0 = No; 1 = Yes; 2 = Uncertain
+MDS-UPDRS Part III Score,UPDRS-III Total,MDS-UPDRS Part III total motor examination score (sum of 33 items),continuous_numeric,0-132; higher = more severe motor impairment
+dopamine_missing,Dopamine Missing,Dopaminergic therapy missing flag,binary_categorical,0 = No; 1 = Yes
+NP3GAIT_missing_due_to_101,Gait 101 Flag,Clinician unable to rate gait due to medical reasons,binary_categorical,0 = No; 1 = Yes
+NP3PSTBL_missing_due_to_101,Postural Stability 101 Flag,Clinician unable to rate postural stability due to medical reasons,binary_categorical,0 = No; 1 = Yes
+NHY_missing_due_to_101,H&Y 101 Flag,Clinician unable to rate Hoehn & Yahr stage due to medical reasons,binary_categorical,0 = No; 1 = Yes

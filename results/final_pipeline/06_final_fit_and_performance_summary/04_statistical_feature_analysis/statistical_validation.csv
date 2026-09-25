@@ -1,0 +1,14 @@
+check,passed,detail
+26-feature contract,True,expected 26
+100 training partitions,True,20 seeds × 5 folds
+26 tests per partition,True,expected 26
+100 tests per feature,True,expected 100
+training partition sizes,True,outer training minus one inner validation fold
+observed plus missing identity,True,equals training patients
+valid raw p-values,True,all feature tests
+valid adjusted q-values,True,within-partition BH adjustment
+nonnegative effect sizes,True,all feature tests
+missingness coverage,True,26 features × 100 partitions
+source missing-count identity,True,recorded plus missing equals training patients
+26-row feature summary,True,one row per candidate feature
+constipation included,True,new candidate analyzed

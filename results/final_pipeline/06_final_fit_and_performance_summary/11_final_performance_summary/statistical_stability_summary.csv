@@ -1,0 +1,27 @@
+feature,descriptive_name,fdr_significant_partitions,common_test_median_effect,effect_size_metric
+NQ_GAUSSIAN_REVISION,Neuro-QoL Gaussian mobility score (8 items),100,0.1560982949810808,epsilon_squared
+FRZGT12M,Freezing of gait severity,100,0.1528078312830476,epsilon_squared
+NHY_COMBINED_MAX,"Hoehn–Yahr stage, combined states",100,0.1496163273546625,epsilon_squared
+NP3GAIT_COMBINED_MAX,"Part III gait, combined states",100,0.1319433202054902,epsilon_squared
+NP3PSTBL_COMBINED_MAX,"Part III postural stability, combined states",100,0.1129766601981139,epsilon_squared
+Years_since_PD_diagnosis,Years since PD diagnosis,100,0.1093388053652996,epsilon_squared
+NP4TOT,MDS-UPDRS Part IV complications total,100,0.1087394086189559,epsilon_squared
+NP1RTOT,MDS-UPDRS Part I rater total,100,0.102786937302438,epsilon_squared
+NP3TOT_COMBINED_MAX,"MDS-UPDRS Part III motor total, combined states",100,0.0924152185862433,epsilon_squared
+NP1CNST,Constipation severity,100,0.0913725241577124,epsilon_squared
+NP1URIN,Urinary problems,100,0.0796429587421236,epsilon_squared
+NP1SLPD,Daytime sleepiness,100,0.0622014354773392,epsilon_squared
+GDS_TOTAL,GDS-15 depression total,100,0.0530746571013879,epsilon_squared
+Age,Age at landmark,100,0.0483944790982935,epsilon_squared
+SCAU14,Lightheaded after standing,100,0.0454661966327204,epsilon_squared
+MCATOT,MoCA total score,100,0.0303188945461876,epsilon_squared
+SCAU16,Fainting,86,0.0195352370714694,epsilon_squared
+DOPTHERST,Dopaminergic therapy started,52,0.1021744498267538,bias_corrected_cramers_v
+FEATPOSHYP,Postural hypotension clinical feature,39,0.0687315279446408,bias_corrected_cramers_v
+ANYFAMPD,Family history of Parkinson's disease,27,0.0691884056176382,bias_corrected_cramers_v
+DXBRADY,Bradykinesia at diagnosis,6,0.0343279063137282,bias_corrected_cramers_v
+BMI,Body mass index,3,0.0005590130829293,epsilon_squared
+DXPOSINS,Postural instability at diagnosis,2,0.0150051550975943,bias_corrected_cramers_v
+DXRIGID,Rigidity at diagnosis,1,0.0,bias_corrected_cramers_v
+DOMSIDE,Predominantly affected side at onset,0,0.0,bias_corrected_cramers_v
+DXTREMOR,Resting tremor at diagnosis,0,0.0,bias_corrected_cramers_v

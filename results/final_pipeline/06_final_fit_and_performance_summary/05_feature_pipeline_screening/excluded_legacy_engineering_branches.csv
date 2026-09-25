@@ -1,0 +1,7 @@
+earlier_branch,status,reason,final_26_replacement
+INT_SBP_CHANGE_X_LIGHTHEADEDNESS,excluded,SYS_CHANGE_STANDING_MINUS_SUPINE is outside the final 26-source universe,none
+PCA_neuroqol_items_8,excluded,Individual Neuro-QoL items are not candidates; the questionnaire enters only as the single Gaussian score (D28),none; NQ_GAUSSIAN_REVISION remains available as a source feature
+PCA_part_i_rater_items_6,excluded,The six individual rater items are outside the final 26-source universe,none; NP1RTOT remains available as a source feature
+PCA_part_i_patient_items_7,redefined within final inputs,"Only sleepiness, urinary problems, and constipation are in the final 26","PCA_PART_I_PATIENT_3 at 0.80, 0.90, and 0.95"
+PCA_part_iv_items_6,excluded,The six individual Part IV items are outside the final 26-source universe,none; NP4TOT remains available as a source feature
+PCA_orthostatic_raw_vitals_6,excluded,The raw orthostatic vital signs are outside the final 26-source universe,none

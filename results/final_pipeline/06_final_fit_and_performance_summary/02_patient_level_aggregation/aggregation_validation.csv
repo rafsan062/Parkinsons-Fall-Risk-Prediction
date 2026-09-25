@@ -1,0 +1,18 @@
+check,passed,detail
+primary cohort size,True,observed=1040
+primary class counts,True,expected 712/227/101
+unique patients,True,all primary and sensitivity predictor tables
+primary patient alignment,True,"all 1,040-patient tables match primary metadata order"
+broader patient alignment,True,"1,043-patient predictors match broader metadata order"
+primary feature count,True,expected 26
+outcome separation,True,no outcome or timing field appears in predictors
+no imputation,True,primary predictor missingness remains
+broader sensitivity size,True,observed=1043
+broader sensitivity alignment,True,predictors match broader metadata order
+101 removed from clinical scores,True,all audited Part III and Part IV representations
+valid postural-hypotension categories,True,No/Yes/Uncertain only
+valid cleaned BMI,True,all recorded BMI values within 10–60
+latest constipation changes one column,True,25 shared predictors are identical
+maximum dominates latest constipation,True,historical maximum cannot be below latest eligible value
+101 flags valid,True,all three status flags are binary or missing
+ON/OFF replaces combined state,True,four combined fields replaced by eight state fields

@@ -1,0 +1,6 @@
+sensitivity_id,check,passed,detail
+S01_101_FLAGS,adds only the three flags; flags complete and binary,True,"flagged patients: NP3GAIT_WAS_101_EVER=53, NP3PSTBL_WAS_101_EVER=322, NHY_WAS_101_EVER=127"
+S02_ON_OFF,replaces only the four combined-state scores,True,ON available 795; OFF available 729
+S03_COHORT_1043,adds three patients without longitudinal history; shared rows identical,True,added patient classes: {0: 3}
+S04_REVISION_PREPROCESSING,uses the unchanged primary input,True,only the fold-fitted missing-data rules change
+S05_CONSTIPATION_LATEST,changes only NP1CNST,True,patients with a different NP1CNST value: 381

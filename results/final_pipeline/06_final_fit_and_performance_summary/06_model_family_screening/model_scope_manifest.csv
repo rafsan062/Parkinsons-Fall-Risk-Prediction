@@ -1,0 +1,11 @@
+model_family,backend,screening_parameters,candidate_winner
+logistic,scaled_dense,"{""C"": 1.0, ""class_weight"": ""balanced""}",True
+linear_svc,scaled_dense,"{""C"": 1.0, ""class_weight"": ""balanced""}",True
+rbf_svc,scaled_dense,"{""C"": 1.0, ""class_weight"": ""balanced"", ""gamma"": ""scale""}",True
+random_forest,unscaled_dense,"{""class_weight"": ""balanced"", ""max_depth"": 6, ""min_samples_leaf"": 5, ""n_estimators"": 300}",True
+extra_trees,unscaled_dense,"{""class_weight"": ""balanced"", ""max_depth"": 6, ""min_samples_leaf"": 5, ""n_estimators"": 300}",True
+hist_gradient_boosting,native,"{""class_weight"": ""balanced"", ""l2_regularization"": 1.0, ""learning_rate"": 0.05, ""max_leaf_nodes"": 15}",True
+xgboost,native,"{""colsample_bytree"": 0.8, ""learning_rate"": 0.08, ""max_depth"": 2, ""n_estimators"": 300, ""reg_lambda"": 5.0, ""sample_weight"": ""balanced"", ""subsample"": 0.8}",True
+lightgbm,native,"{""class_weight"": ""balanced"", ""colsample_bytree"": 0.8, ""learning_rate"": 0.05, ""min_child_samples"": 20, ""n_estimators"": 300, ""num_leaves"": 15, ""reg_lambda"": 1.0, ""subsample"": 0.8, ""subsample_freq"": 1}",True
+catboost,native,"{""auto_class_weights"": ""Balanced"", ""depth"": 4, ""iterations"": 300, ""l2_leaf_reg"": 5.0, ""learning_rate"": 0.05}",True
+dummy_prior,none,"{""strategy"": ""prior""}",False

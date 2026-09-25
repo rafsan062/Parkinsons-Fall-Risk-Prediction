@@ -1,0 +1,10 @@
+rule,affected_records,affected_patients
+Part I 101 converted to missing,32,17
+Part III 101 converted to missing with flags,1196,325
+Part IV 101 converted to missing,65,33
+Partial GDS-15 left without total,13,11
+FEATPOSHYP Uncertain preserved,232,158
+FEATSUGRBD Uncertain preserved,349,216
+Height corrected from eligible history,23,20
+Weight invalidated from eligible history,11,11
+Records carrying unresolved height flag,26,9

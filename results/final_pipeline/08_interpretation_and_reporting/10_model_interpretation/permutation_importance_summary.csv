@@ -1,0 +1,183 @@
+model,metric,group,mean_drop,sd_drop,folds_positive,label
+direct_system,macro_f1,ANYFAMPD,0.004444505045304799,0.008667846928760123,3,Family history of PD
+direct_system,macro_f1,Age,0.013351155543422987,0.008205093050177095,5,Age
+direct_system,macro_f1,BMI,0.0,0.0,0,Body mass index
+direct_system,macro_f1,DOMSIDE,0.0,0.0,0,Dominant side at diagnosis
+direct_system,macro_f1,DOPTHERST,-0.0011549566138627989,0.006203887763127039,2,Dopaminergic therapy started
+direct_system,macro_f1,DXBRADY,0.0005697870725784515,0.0012740826269860238,1,Bradykinesia at diagnosis
+direct_system,macro_f1,DXPOSINS,0.0,0.0,0,Postural instability at diagnosis
+direct_system,macro_f1,DXRIGID,0.0,0.0,0,Rigidity at diagnosis
+direct_system,macro_f1,DXTREMOR,0.0,0.0,0,Tremor at diagnosis
+direct_system,macro_f1,FEATPOSHYP,-0.002705634020005069,0.0023962157710467084,0,Symptomatic orthostatic hypotension documented
+direct_system,macro_f1,GDS_TOTAL,-0.002324090870753543,0.012345128274717839,2,Geriatric Depression Scale total
+direct_system,macro_f1,GROUP_FREEZING_FORM,0.020604560412970326,0.01771705366991002,4,"Freezing of gait, preceding 12 months"
+direct_system,macro_f1,GROUP_NEUROQOL_FORM,0.018851173350829746,0.008292529358961475,5,Neuro-QoL Gaussian mobility score (8 items)
+direct_system,macro_f1,GROUP_PART_IV_FORM,0.002711977171522021,0.009538720693040166,4,MDS-UPDRS Part IV total (motor complications)
+direct_system,macro_f1,MCATOT,0.0012411510054879875,0.015872309105941246,4,MoCA total (cognition)
+direct_system,macro_f1,NHY_COMBINED_MAX,-0.0054463828707117645,0.007965916938546787,2,Hoehn and Yahr stage
+direct_system,macro_f1,NP1CNST,0.020867487048528206,0.01653063092781855,4,Constipation
+direct_system,macro_f1,NP1RTOT,-0.0013155352315898986,0.012958709263460853,2,MDS-UPDRS Part I rater total
+direct_system,macro_f1,NP1SLPD,0.006216253684634074,0.0037109602643044396,4,Daytime sleepiness
+direct_system,macro_f1,NP1URIN,0.00629974890702068,0.007796196350629571,4,Urinary problems
+direct_system,macro_f1,NP3GAIT_COMBINED_MAX,-0.003436471065177413,0.012064001010969928,1,Gait (MDS-UPDRS Part III)
+direct_system,macro_f1,NP3PSTBL_COMBINED_MAX,0.0004414047126175411,0.009043582346122979,2,Postural stability (MDS-UPDRS Part III)
+direct_system,macro_f1,NP3TOT_COMBINED_MAX,0.00872908863161359,0.008700240383763184,5,MDS-UPDRS Part III motor total
+direct_system,macro_f1,SCAU14,-0.0020310036628172178,0.005009492925683213,1,Lightheadedness on standing up (SCOPA-AUT)
+direct_system,macro_f1,SCAU16,-0.0013526776100161251,0.005919102902920795,3,Fainting in preceding six months (SCOPA-AUT)
+direct_system,macro_f1,Years_since_PD_diagnosis,-0.00189921616604289,0.01025492254943329,3,Years since PD diagnosis
+direct_system,rare_fall_recall,ANYFAMPD,-0.010028985507246378,0.039475732419071985,2,Family history of PD
+direct_system,rare_fall_recall,Age,0.0462512077294686,0.022767967826199692,5,Age
+direct_system,rare_fall_recall,BMI,0.0,0.0,0,Body mass index
+direct_system,rare_fall_recall,DOMSIDE,0.0,0.0,0,Dominant side at diagnosis
+direct_system,rare_fall_recall,DOPTHERST,-0.0013816425120772905,0.011695092444507837,2,Dopaminergic therapy started
+direct_system,rare_fall_recall,DXBRADY,0.0008695652173913071,0.0019444069369563453,1,Bradykinesia at diagnosis
+direct_system,rare_fall_recall,DXPOSINS,0.0,0.0,0,Postural instability at diagnosis
+direct_system,rare_fall_recall,DXRIGID,0.0,0.0,0,Rigidity at diagnosis
+direct_system,rare_fall_recall,DXTREMOR,0.0,0.0,0,Tremor at diagnosis
+direct_system,rare_fall_recall,FEATPOSHYP,-0.012782608695652179,0.009709279649961218,0,Symptomatic orthostatic hypotension documented
+direct_system,rare_fall_recall,GDS_TOTAL,-0.005565217391304345,0.030515237573179546,2,Geriatric Depression Scale total
+direct_system,rare_fall_recall,GROUP_FREEZING_FORM,-0.04848309178743961,0.030605010483034753,0,"Freezing of gait, preceding 12 months"
+direct_system,rare_fall_recall,GROUP_NEUROQOL_FORM,-0.014608695652173913,0.026712783060324843,2,Neuro-QoL Gaussian mobility score (8 items)
+direct_system,rare_fall_recall,GROUP_PART_IV_FORM,-0.05408695652173913,0.05202769141519472,1,MDS-UPDRS Part IV total (motor complications)
+direct_system,rare_fall_recall,MCATOT,0.0007342995169082132,0.03847678851833996,4,MoCA total (cognition)
+direct_system,rare_fall_recall,NHY_COMBINED_MAX,-0.04688888888888888,0.02131589070233729,0,Hoehn and Yahr stage
+direct_system,rare_fall_recall,NP1CNST,0.04802898550724637,0.035440938448200045,4,Constipation
+direct_system,rare_fall_recall,NP1RTOT,-0.024367149758454103,0.03365304909809686,1,MDS-UPDRS Part I rater total
+direct_system,rare_fall_recall,NP1SLPD,0.0071304347826086955,0.009580673600270873,3,Daytime sleepiness
+direct_system,rare_fall_recall,NP1URIN,0.0056231884057971054,0.02282447914998009,2,Urinary problems
+direct_system,rare_fall_recall,NP3GAIT_COMBINED_MAX,-0.020280193236714976,0.030684627429303363,1,Gait (MDS-UPDRS Part III)
+direct_system,rare_fall_recall,NP3PSTBL_COMBINED_MAX,-0.003188405797101445,0.02072615784431855,2,Postural stability (MDS-UPDRS Part III)
+direct_system,rare_fall_recall,NP3TOT_COMBINED_MAX,0.017043478260869566,0.026595626686823,4,MDS-UPDRS Part III motor total
+direct_system,rare_fall_recall,SCAU14,-0.014009661835748793,0.017088172744320482,1,Lightheadedness on standing up (SCOPA-AUT)
+direct_system,rare_fall_recall,SCAU16,-8.695652173912605e-05,0.013264120576828894,1,Fainting in preceding six months (SCOPA-AUT)
+direct_system,rare_fall_recall,Years_since_PD_diagnosis,-0.03845410628019323,0.03984559981118728,1,Years since PD diagnosis
+stage_1,macro_f1,ANYFAMPD,0.0006348364980469378,0.00732565809768254,2,Family history of PD
+stage_1,macro_f1,Age,-0.0017160918308435067,0.0031574338222663517,2,Age
+stage_1,macro_f1,BMI,0.0,0.0,0,Body mass index
+stage_1,macro_f1,DOMSIDE,0.0,0.0,0,Dominant side at diagnosis
+stage_1,macro_f1,DOPTHERST,-0.0029384583643532825,0.0043001542185780875,1,Dopaminergic therapy started
+stage_1,macro_f1,DXBRADY,-0.0005857010263346885,0.0014383250739446595,1,Bradykinesia at diagnosis
+stage_1,macro_f1,DXPOSINS,0.0,0.0,0,Postural instability at diagnosis
+stage_1,macro_f1,DXRIGID,0.0,0.0,0,Rigidity at diagnosis
+stage_1,macro_f1,DXTREMOR,0.0,0.0,0,Tremor at diagnosis
+stage_1,macro_f1,FEATPOSHYP,-0.0011982508199596122,0.006283877019089652,1,Symptomatic orthostatic hypotension documented
+stage_1,macro_f1,GDS_TOTAL,-0.0057272242609770745,0.006274115658153972,1,Geriatric Depression Scale total
+stage_1,macro_f1,GROUP_FREEZING_FORM,-0.002875033352086718,0.00872627622429036,2,"Freezing of gait, preceding 12 months"
+stage_1,macro_f1,GROUP_NEUROQOL_FORM,0.0041446527266163265,0.011269800782518795,3,Neuro-QoL Gaussian mobility score (8 items)
+stage_1,macro_f1,GROUP_PART_IV_FORM,-0.0042051643456412525,0.010376720329980318,2,MDS-UPDRS Part IV total (motor complications)
+stage_1,macro_f1,MCATOT,-0.00429881938805271,0.007227001417006216,1,MoCA total (cognition)
+stage_1,macro_f1,NHY_COMBINED_MAX,-0.001620769364909698,0.004220860010811,2,Hoehn and Yahr stage
+stage_1,macro_f1,NP1CNST,0.0018454359925506498,0.011521899660767406,4,Constipation
+stage_1,macro_f1,NP1RTOT,-0.00935121728022719,0.0045039957318527765,0,MDS-UPDRS Part I rater total
+stage_1,macro_f1,NP1SLPD,-0.004493397451361658,0.007198547822895727,1,Daytime sleepiness
+stage_1,macro_f1,NP1URIN,-0.0036442128449741132,0.006745413973234142,1,Urinary problems
+stage_1,macro_f1,NP3GAIT_COMBINED_MAX,-0.001573629712462172,0.008254490045869946,1,Gait (MDS-UPDRS Part III)
+stage_1,macro_f1,NP3PSTBL_COMBINED_MAX,0.0017881584491533382,0.00628767379331435,2,Postural stability (MDS-UPDRS Part III)
+stage_1,macro_f1,NP3TOT_COMBINED_MAX,-0.008689260310908846,0.011324142915135265,1,MDS-UPDRS Part III motor total
+stage_1,macro_f1,SCAU14,-0.0031988864742639777,0.0034197435185757204,1,Lightheadedness on standing up (SCOPA-AUT)
+stage_1,macro_f1,SCAU16,6.208330136069808e-05,0.003695942636946249,2,Fainting in preceding six months (SCOPA-AUT)
+stage_1,macro_f1,Years_since_PD_diagnosis,-0.005452512633311089,0.00981765839995779,1,Years since PD diagnosis
+stage_2,macro_f1,ANYFAMPD,0.025043656610657862,0.04239644383649575,3,Family history of PD
+stage_2,macro_f1,Age,0.0,0.0,0,Age
+stage_2,macro_f1,BMI,0.0,0.0,0,Body mass index
+stage_2,macro_f1,DOMSIDE,0.018644073768867633,0.011397568909320635,5,Dominant side at diagnosis
+stage_2,macro_f1,DOPTHERST,-0.0005709117611081546,0.010543306243541174,2,Dopaminergic therapy started
+stage_2,macro_f1,DXBRADY,0.0,0.0,0,Bradykinesia at diagnosis
+stage_2,macro_f1,DXPOSINS,0.0,0.0,0,Postural instability at diagnosis
+stage_2,macro_f1,DXRIGID,-0.006110951878408346,0.01366450380735109,0,Rigidity at diagnosis
+stage_2,macro_f1,DXTREMOR,0.0,0.0,0,Tremor at diagnosis
+stage_2,macro_f1,FEATPOSHYP,0.006449478610136708,0.017208427168702793,3,Symptomatic orthostatic hypotension documented
+stage_2,macro_f1,GDS_TOTAL,0.0,0.0,0,Geriatric Depression Scale total
+stage_2,macro_f1,GROUP_FREEZING_FORM,0.09865866025267403,0.03601696254495166,5,"Freezing of gait, preceding 12 months"
+stage_2,macro_f1,GROUP_NEUROQOL_FORM,0.05135262000766898,0.023918347183902615,5,Neuro-QoL Gaussian mobility score (8 items)
+stage_2,macro_f1,GROUP_PART_IV_FORM,0.08026320635472012,0.0245437930189539,5,MDS-UPDRS Part IV total (motor complications)
+stage_2,macro_f1,MCATOT,0.0,0.0,0,MoCA total (cognition)
+stage_2,macro_f1,NHY_COMBINED_MAX,0.025919751161503368,0.03839387031272053,4,Hoehn and Yahr stage
+stage_2,macro_f1,NP1CNST,0.0,0.0,0,Constipation
+stage_2,macro_f1,NP1RTOT,0.009268026595922716,0.011666256454914892,3,MDS-UPDRS Part I rater total
+stage_2,macro_f1,NP1SLPD,0.0,0.0,0,Daytime sleepiness
+stage_2,macro_f1,NP1URIN,0.002796312135378376,0.022117854121592322,1,Urinary problems
+stage_2,macro_f1,NP3GAIT_COMBINED_MAX,0.005378869900558021,0.02711775716598131,2,Gait (MDS-UPDRS Part III)
+stage_2,macro_f1,NP3PSTBL_COMBINED_MAX,0.0027720577186206978,0.01976181014101387,3,Postural stability (MDS-UPDRS Part III)
+stage_2,macro_f1,NP3TOT_COMBINED_MAX,0.0,0.0,0,MDS-UPDRS Part III motor total
+stage_2,macro_f1,SCAU14,0.007151605275331342,0.023600511695372122,2,Lightheadedness on standing up (SCOPA-AUT)
+stage_2,macro_f1,SCAU16,0.0,0.0,0,Fainting in preceding six months (SCOPA-AUT)
+stage_2,macro_f1,Years_since_PD_diagnosis,0.03171291341754923,0.03623121737855792,3,Years since PD diagnosis
+stage_2,rare_fall_recall,ANYFAMPD,-0.011642512077294711,0.02333318330434561,2,Family history of PD
+stage_2,rare_fall_recall,Age,0.0,0.0,0,Age
+stage_2,rare_fall_recall,BMI,0.0,0.0,0,Body mass index
+stage_2,rare_fall_recall,DOMSIDE,0.002985507246376802,0.019673357732159346,2,Dominant side at diagnosis
+stage_2,rare_fall_recall,DOPTHERST,-0.0004734299516908248,0.007416867165535023,3,Dopaminergic therapy started
+stage_2,rare_fall_recall,DXBRADY,0.0,0.0,0,Bradykinesia at diagnosis
+stage_2,rare_fall_recall,DXPOSINS,0.0,0.0,0,Postural instability at diagnosis
+stage_2,rare_fall_recall,DXRIGID,-0.0017777777777777826,0.003975231959999637,0,Rigidity at diagnosis
+stage_2,rare_fall_recall,DXTREMOR,0.0,0.0,0,Tremor at diagnosis
+stage_2,rare_fall_recall,FEATPOSHYP,-0.003990338164251213,0.006557924306556925,0,Symptomatic orthostatic hypotension documented
+stage_2,rare_fall_recall,GDS_TOTAL,0.0,0.0,0,Geriatric Depression Scale total
+stage_2,rare_fall_recall,GROUP_FREEZING_FORM,-0.011497584541062814,0.03687416227835299,2,"Freezing of gait, preceding 12 months"
+stage_2,rare_fall_recall,GROUP_NEUROQOL_FORM,-0.011439613526570058,0.02499425591552587,3,Neuro-QoL Gaussian mobility score (8 items)
+stage_2,rare_fall_recall,GROUP_PART_IV_FORM,-0.021700483091787466,0.02536941239654985,1,MDS-UPDRS Part IV total (motor complications)
+stage_2,rare_fall_recall,MCATOT,0.0,0.0,0,MoCA total (cognition)
+stage_2,rare_fall_recall,NHY_COMBINED_MAX,-0.004850241545893745,0.017087032324777648,1,Hoehn and Yahr stage
+stage_2,rare_fall_recall,NP1CNST,0.0,0.0,0,Constipation
+stage_2,rare_fall_recall,NP1RTOT,-0.007120772946859914,0.017163619628039632,1,MDS-UPDRS Part I rater total
+stage_2,rare_fall_recall,NP1SLPD,0.0,0.0,0,Daytime sleepiness
+stage_2,rare_fall_recall,NP1URIN,-0.0008985507246376834,0.00335906889410276,1,Urinary problems
+stage_2,rare_fall_recall,NP3GAIT_COMBINED_MAX,-0.01057004830917875,0.020384481437583722,1,Gait (MDS-UPDRS Part III)
+stage_2,rare_fall_recall,NP3PSTBL_COMBINED_MAX,-0.0062318840579710395,0.023774104740186208,2,Postural stability (MDS-UPDRS Part III)
+stage_2,rare_fall_recall,NP3TOT_COMBINED_MAX,0.0,0.0,0,MDS-UPDRS Part III motor total
+stage_2,rare_fall_recall,SCAU14,-0.006164251207729477,0.0122715584035202,2,Lightheadedness on standing up (SCOPA-AUT)
+stage_2,rare_fall_recall,SCAU16,0.0,0.0,0,Fainting in preceding six months (SCOPA-AUT)
+stage_2,rare_fall_recall,Years_since_PD_diagnosis,-0.01936231884057972,0.00945666210000657,0,Years since PD diagnosis
+two_stage_system,macro_f1,ANYFAMPD,0.015163719203142755,0.024773145777004048,3,Family history of PD
+two_stage_system,macro_f1,Age,-0.0002928456433159999,0.0025874040367623824,2,Age
+two_stage_system,macro_f1,BMI,0.0,0.0,0,Body mass index
+two_stage_system,macro_f1,DOMSIDE,0.01015073135873096,0.00636136249408275,5,Dominant side at diagnosis
+two_stage_system,macro_f1,DOPTHERST,-0.0018692115360947348,0.009377944775558415,1,Dopaminergic therapy started
+two_stage_system,macro_f1,DXBRADY,-0.0002706775685671392,0.0014012154027510805,1,Bradykinesia at diagnosis
+two_stage_system,macro_f1,DXPOSINS,0.0,0.0,0,Postural instability at diagnosis
+two_stage_system,macro_f1,DXRIGID,-0.00354968192657376,0.007937330086321344,0,Rigidity at diagnosis
+two_stage_system,macro_f1,DXTREMOR,0.0,0.0,0,Tremor at diagnosis
+two_stage_system,macro_f1,FEATPOSHYP,0.001527020547991646,0.009605039548040064,2,Symptomatic orthostatic hypotension documented
+two_stage_system,macro_f1,GDS_TOTAL,-0.003823253314622705,0.004319631119791206,1,Geriatric Depression Scale total
+two_stage_system,macro_f1,GROUP_FREEZING_FORM,0.05423630186097165,0.02601250209437453,5,"Freezing of gait, preceding 12 months"
+two_stage_system,macro_f1,GROUP_NEUROQOL_FORM,0.0321358824951302,0.011946742317611633,5,Neuro-QoL Gaussian mobility score (8 items)
+two_stage_system,macro_f1,GROUP_PART_IV_FORM,0.03971287445909616,0.01569758933190559,5,MDS-UPDRS Part IV total (motor complications)
+two_stage_system,macro_f1,MCATOT,-0.00399449052847086,0.004170974036604082,1,MoCA total (cognition)
+two_stage_system,macro_f1,NHY_COMBINED_MAX,0.010914016978527485,0.01959104335661347,4,Hoehn and Yahr stage
+two_stage_system,macro_f1,NP1CNST,0.003457303315390628,0.009214421076947686,4,Constipation
+two_stage_system,macro_f1,NP1RTOT,-0.0017796332290830295,0.0075828577356845716,2,MDS-UPDRS Part I rater total
+two_stage_system,macro_f1,NP1SLPD,-0.0030712476489386394,0.003724460600916179,1,Daytime sleepiness
+two_stage_system,macro_f1,NP1URIN,0.0017208858440138624,0.016198759824309593,3,Urinary problems
+two_stage_system,macro_f1,NP3GAIT_COMBINED_MAX,3.435979660097602e-05,0.01640354607117897,2,Gait (MDS-UPDRS Part III)
+two_stage_system,macro_f1,NP3PSTBL_COMBINED_MAX,0.0008054905767105033,0.013482056689657965,3,Postural stability (MDS-UPDRS Part III)
+two_stage_system,macro_f1,NP3TOT_COMBINED_MAX,-0.004648811559430614,0.0068078863673724,1,MDS-UPDRS Part III motor total
+two_stage_system,macro_f1,SCAU14,-0.00032526330292840524,0.013061831280548837,2,Lightheadedness on standing up (SCOPA-AUT)
+two_stage_system,macro_f1,SCAU16,-8.679201179273791e-05,0.002316055023730497,2,Fainting in preceding six months (SCOPA-AUT)
+two_stage_system,macro_f1,Years_since_PD_diagnosis,0.014749864461395607,0.017713496965021943,4,Years since PD diagnosis
+two_stage_system,rare_fall_recall,ANYFAMPD,-0.0020193236714975923,0.03336720955910679,2,Family history of PD
+two_stage_system,rare_fall_recall,Age,0.016396135265700475,0.017626681470078228,4,Age
+two_stage_system,rare_fall_recall,BMI,0.0,0.0,0,Body mass index
+two_stage_system,rare_fall_recall,DOMSIDE,0.0007632850241545786,0.018490504610868392,2,Dominant side at diagnosis
+two_stage_system,rare_fall_recall,DOPTHERST,-0.010512077294685998,0.010531323405289885,1,Dopaminergic therapy started
+two_stage_system,rare_fall_recall,DXBRADY,0.0009178743961352588,0.00635958733672039,1,Bradykinesia at diagnosis
+two_stage_system,rare_fall_recall,DXPOSINS,0.0,0.0,0,Postural instability at diagnosis
+two_stage_system,rare_fall_recall,DXRIGID,-0.0017777777777777815,0.0039752319599996346,0,Rigidity at diagnosis
+two_stage_system,rare_fall_recall,DXTREMOR,0.0,0.0,0,Tremor at diagnosis
+two_stage_system,rare_fall_recall,FEATPOSHYP,-0.018463768115942046,0.015459329705161983,0,Symptomatic orthostatic hypotension documented
+two_stage_system,rare_fall_recall,GDS_TOTAL,-0.0026473429951690904,0.004719784512331417,1,Geriatric Depression Scale total
+two_stage_system,rare_fall_recall,GROUP_FREEZING_FORM,-0.01925603864734301,0.03356260158513909,1,"Freezing of gait, preceding 12 months"
+two_stage_system,rare_fall_recall,GROUP_NEUROQOL_FORM,0.0026183574879226888,0.0475046338562024,3,Neuro-QoL Gaussian mobility score (8 items)
+two_stage_system,rare_fall_recall,GROUP_PART_IV_FORM,-0.017082125603864746,0.025931379888620588,1,MDS-UPDRS Part IV total (motor complications)
+two_stage_system,rare_fall_recall,MCATOT,-0.002270531400966189,0.012304813459340935,1,MoCA total (cognition)
+two_stage_system,rare_fall_recall,NHY_COMBINED_MAX,-0.019787439613526584,0.017987291989287616,1,Hoehn and Yahr stage
+two_stage_system,rare_fall_recall,NP1CNST,0.02251207729468598,0.016453087869629558,5,Constipation
+two_stage_system,rare_fall_recall,NP1RTOT,-0.01405797101449276,0.016370967848555663,1,MDS-UPDRS Part I rater total
+two_stage_system,rare_fall_recall,NP1SLPD,0.0004444444444444373,0.0024343224778007296,1,Daytime sleepiness
+two_stage_system,rare_fall_recall,NP1URIN,0.006193236714975835,0.008236424548976128,4,Urinary problems
+two_stage_system,rare_fall_recall,NP3GAIT_COMBINED_MAX,-0.014096618357487939,0.010745855322584773,1,Gait (MDS-UPDRS Part III)
+two_stage_system,rare_fall_recall,NP3PSTBL_COMBINED_MAX,-0.01454106280193238,0.045567823308108504,2,Postural stability (MDS-UPDRS Part III)
+two_stage_system,rare_fall_recall,NP3TOT_COMBINED_MAX,0.0007922705314009505,0.011288264292309926,3,MDS-UPDRS Part III motor total
+two_stage_system,rare_fall_recall,SCAU14,-0.007478260869565224,0.008808672390401973,1,Lightheadedness on standing up (SCOPA-AUT)
+two_stage_system,rare_fall_recall,SCAU16,-0.0008599033816425116,0.0033081030728191233,1,Fainting in preceding six months (SCOPA-AUT)
+two_stage_system,rare_fall_recall,Years_since_PD_diagnosis,-0.013053140096618376,0.02697068178643452,1,Years since PD diagnosis

@@ -1,0 +1,16 @@
+check,passed,detail
+primary patient count,True,"expected 1,040"
+primary feature count,True,expected 26
+predictor and metadata alignment,True,same patients in deterministic order
+primary class counts,True,expected 712/227/101
+12-month landmark lag,True,every outcome month is 12 months after its index month
+outcome separation,True,predictors contain no outcome or timing fields
+unimputed predictors,True,missing values remain for training-only handling
+distinct outer test sets,True,20 unique patient sets
+outer split separation,True,train and test are disjoint and exhaustive
+outer split sizes,True,728 train and 312 test for every seed
+inner assignment coverage,True,each outer-training patient enters one validation fold
+outer-test exclusion from inner folds,True,zero patient overlap
+all classes in outer roles,True,"classes 0, 1, and 2 occur in every train and test set"
+all classes in inner roles,True,"classes 0, 1, and 2 occur in every inner train and validation set"
+Stage 2 class coverage,True,rare and recurrent fallers occur in every inner role

@@ -1,0 +1,10 @@
+target,feature,rule,fill_value,missing_training_patients,applies_to_model_input
+direct,FRZGT12M,training mode,0.0,63,False
+direct,NQ_GAUSSIAN_REVISION,training median,1.6006372836013505,64,False
+direct,NP4TOT,training median,2.0,81,False
+stage_1,FRZGT12M,training mode,0.0,63,True
+stage_1,NQ_GAUSSIAN_REVISION,training median,1.6006372836013505,64,True
+stage_1,NP4TOT,training median,2.0,81,True
+stage_2,FRZGT12M,training mode,0.0,28,True
+stage_2,NQ_GAUSSIAN_REVISION,training median,2.631652088887132,29,True
+stage_2,NP4TOT,training median,5.0,12,True

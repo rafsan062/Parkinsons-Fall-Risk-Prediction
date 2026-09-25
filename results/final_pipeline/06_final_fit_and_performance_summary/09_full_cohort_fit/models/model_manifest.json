@@ -1,0 +1,102 @@
+{
+  "run_version": "final-notebook-09-full-cohort-fit-v2-26-features-d28",
+  "configuration_hash": "66a9a9a77e08bcec453ee8ff0f6485fe256bf6bb302106a78c1a4b5b8beae001",
+  "cohort": "primary 1,040-patient landmark cohort",
+  "input_columns": [
+    "Years_since_PD_diagnosis",
+    "Age",
+    "DXPOSINS",
+    "DXRIGID",
+    "DOPTHERST",
+    "MCATOT",
+    "FRZGT12M",
+    "SCAU14",
+    "SCAU16",
+    "GDS_TOTAL",
+    "NQ_GAUSSIAN_REVISION",
+    "NP1RTOT",
+    "BMI",
+    "NP1SLPD",
+    "NP1URIN",
+    "NP3GAIT_COMBINED_MAX",
+    "NP3PSTBL_COMBINED_MAX",
+    "NHY_COMBINED_MAX",
+    "FEATPOSHYP",
+    "NP3TOT_COMBINED_MAX",
+    "NP4TOT",
+    "ANYFAMPD",
+    "DXTREMOR",
+    "DXBRADY",
+    "DOMSIDE",
+    "NP1CNST"
+  ],
+  "selection_seed": 42,
+  "final_fit_seed": 500042,
+  "models": {
+    "direct": {
+      "file": "direct_pipeline.pkl",
+      "sha256": "7584c8f94e50de44ae58bf825670db13484c8ec05e93a829358182502d6ba5e9",
+      "model_family": "catboost",
+      "pipeline_key": "raw__corrected_fdr__q<=0.05",
+      "parameters": {
+        "auto_class_weights": "Balanced",
+        "depth": 6,
+        "iterations": 300,
+        "l2_leaf_reg": 5.0,
+        "learning_rate": 0.03
+      },
+      "training_patients": 1040,
+      "class_coding": {
+        "0": "no fall",
+        "1": "rare fall",
+        "2": "recurrent fall"
+      }
+    },
+    "stage_1": {
+      "file": "stage_1_pipeline.pkl",
+      "sha256": "4fbf8d985b5723db0c550ac97fefe533f5e7753405ff040ec4f590049c2e144d",
+      "model_family": "extra_trees",
+      "pipeline_key": "raw__corrected_fdr__q<=0.05",
+      "parameters": {
+        "class_weight": "balanced",
+        "max_depth": null,
+        "min_samples_leaf": 5,
+        "n_estimators": 300
+      },
+      "training_patients": 1040,
+      "class_coding": {
+        "0": "no fall",
+        "1": "any fall"
+      }
+    },
+    "stage_2": {
+      "file": "stage_2_pipeline.pkl",
+      "sha256": "b863a19014fa648825ea18d1712e8d96a28dae27e3d7382fa06f966a4bf7bcdc",
+      "model_family": "random_forest",
+      "pipeline_key": "raw__extra_trees__threshold=median",
+      "parameters": {
+        "class_weight": null,
+        "max_depth": null,
+        "min_samples_leaf": 1,
+        "n_estimators": 300
+      },
+      "training_patients": 328,
+      "class_coding": {
+        "0": "rare fall",
+        "1": "recurrent fall"
+      }
+    }
+  },
+  "two_stage_rule": "Predict no fall when Stage 1 predicts class 0; otherwise the final class is Stage 2's class + 1 (1 = rare fall, 2 = recurrent fall).",
+  "loading": "pickle.load with cloudpickle and the package versions below installed",
+  "data_governance": "Model files can contain derived patient-level training values (for example, RBF SVC support vectors); share them only under PPMI data-use terms.",
+  "performance_note": "Full-cohort training-set predictions and selection scores are not performance estimates; report Notebook 07's outer evaluation.",
+  "package_versions": {
+    "python": "3.13.12",
+    "scikit_learn": "1.8.0",
+    "xgboost": "3.2.0",
+    "lightgbm": "4.7.0",
+    "catboost": "1.2.10",
+    "cloudpickle": "3.1.2"
+  }
+}

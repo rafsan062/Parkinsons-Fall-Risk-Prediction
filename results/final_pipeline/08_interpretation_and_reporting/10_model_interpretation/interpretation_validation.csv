@@ -1,0 +1,7 @@
+check,passed
+model files match Notebook 09 hashes,True
+every source variable is in exactly one group,True
+"every fold, group, and score evaluated",True
+"drops are finite and within [-1, 1]",True
+retention covers 3 targets x all groups,True
+outer refits cover 20 seeds per target,True

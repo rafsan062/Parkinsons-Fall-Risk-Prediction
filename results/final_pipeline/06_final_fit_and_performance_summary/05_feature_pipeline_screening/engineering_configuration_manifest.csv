@@ -1,0 +1,8 @@
+configuration_id,branch,branch_kind,source_features,variance_threshold,reference_model,pipeline_key,candidate_kind,feature_set,selector,selector_parameter
+ENG_01,INT_GAIT_X_POSTURAL_STABILITY,interaction,NP3GAIT_COMBINED_MAX | NP3PSTBL_COMBINED_MAX,,extra_trees,engineering__INT_GAIT_X_POSTURAL_STABILITY,engineered_representation,final_26,none,all
+ENG_02,INT_MOTOR_X_COGNITION,interaction,NP3TOT_COMBINED_MAX | MCATOT,,extra_trees,engineering__INT_MOTOR_X_COGNITION,engineered_representation,final_26,none,all
+ENG_03,INT_DURATION_X_MOTOR,interaction,Years_since_PD_diagnosis | NP3TOT_COMBINED_MAX,,extra_trees,engineering__INT_DURATION_X_MOTOR,engineered_representation,final_26,none,all
+ENG_04,INT_MOBILITY_X_POSTURAL_STABILITY,interaction,NQ_GAUSSIAN_REVISION | NP3PSTBL_COMBINED_MAX,,extra_trees,engineering__INT_MOBILITY_X_POSTURAL_STABILITY,engineered_representation,final_26,none,all
+ENG_05,PCA_PART_I_PATIENT_3_80,pca,NP1SLPD | NP1URIN | NP1CNST,0.8,extra_trees,engineering__PCA_PART_I_PATIENT_3_80,engineered_representation,final_26,none,all
+ENG_06,PCA_PART_I_PATIENT_3_90,pca,NP1SLPD | NP1URIN | NP1CNST,0.9,extra_trees,engineering__PCA_PART_I_PATIENT_3_90,engineered_representation,final_26,none,all
+ENG_07,PCA_PART_I_PATIENT_3_95,pca,NP1SLPD | NP1URIN | NP1CNST,0.95,extra_trees,engineering__PCA_PART_I_PATIENT_3_95,engineered_representation,final_26,none,all

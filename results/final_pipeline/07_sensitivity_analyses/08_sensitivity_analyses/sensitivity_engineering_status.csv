@@ -1,0 +1,12 @@
+sensitivity_id,engineering_status,pipelines
+S01_101_FLAGS,constructed,15
+S01_101_FLAGS,not_applicable,45
+S02_ON_OFF,constructed,8
+S02_ON_OFF,not_applicable,45
+S02_ON_OFF,not_constructible,7
+S03_COHORT_1043,constructed,15
+S03_COHORT_1043,not_applicable,45
+S04_REVISION_PREPROCESSING,constructed,15
+S04_REVISION_PREPROCESSING,not_applicable,45
+S05_CONSTIPATION_LATEST,constructed,15
+S05_CONSTIPATION_LATEST,not_applicable,45

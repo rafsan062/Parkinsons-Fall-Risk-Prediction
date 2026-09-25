@@ -1,0 +1,69 @@
+table,check,result
+demographics,row count preserved after cleaning,True
+demographics,all dates observed and landmark eligible,True
+demographics,record identifiers unique,True
+demographics,outcome fields absent,True
+family_history,row count preserved after cleaning,True
+family_history,all dates observed and landmark eligible,True
+family_history,record identifiers unique,True
+family_history,outcome fields absent,True
+diagnosis_history,row count preserved after cleaning,True
+diagnosis_history,all dates observed and landmark eligible,True
+diagnosis_history,record identifiers unique,True
+diagnosis_history,outcome fields absent,True
+dopamine_therapy,row count preserved after cleaning,True
+dopamine_therapy,all dates observed and landmark eligible,True
+dopamine_therapy,record identifiers unique,True
+dopamine_therapy,outcome fields absent,True
+other_clinical,row count preserved after cleaning,True
+other_clinical,all dates observed and landmark eligible,True
+other_clinical,record identifiers unique,True
+other_clinical,outcome fields absent,True
+moca,row count preserved after cleaning,True
+moca,all dates observed and landmark eligible,True
+moca,record identifiers unique,True
+moca,outcome fields absent,True
+freezing,row count preserved after cleaning,True
+freezing,all dates observed and landmark eligible,True
+freezing,record identifiers unique,True
+freezing,outcome fields absent,True
+scopa_aut,row count preserved after cleaning,True
+scopa_aut,all dates observed and landmark eligible,True
+scopa_aut,record identifiers unique,True
+scopa_aut,outcome fields absent,True
+neuroqol_mobility,row count preserved after cleaning,True
+neuroqol_mobility,all dates observed and landmark eligible,True
+neuroqol_mobility,record identifiers unique,True
+neuroqol_mobility,outcome fields absent,True
+updrs_part_i_patient,row count preserved after cleaning,True
+updrs_part_i_patient,all dates observed and landmark eligible,True
+updrs_part_i_patient,record identifiers unique,True
+updrs_part_i_patient,outcome fields absent,True
+updrs_part_iv,row count preserved after cleaning,True
+updrs_part_iv,all dates observed and landmark eligible,True
+updrs_part_iv,record identifiers unique,True
+updrs_part_iv,outcome fields absent,True
+updrs_part_i,row count preserved after cleaning,True
+updrs_part_i,all dates observed and landmark eligible,True
+updrs_part_i,record identifiers unique,True
+updrs_part_i,outcome fields absent,True
+updrs_part_iii,row count preserved after cleaning,True
+updrs_part_iii,all dates observed and landmark eligible,True
+updrs_part_iii,record identifiers unique,True
+updrs_part_iii,outcome fields absent,True
+gds15,row count preserved after cleaning,True
+gds15,all dates observed and landmark eligible,True
+gds15,record identifiers unique,True
+gds15,outcome fields absent,True
+vital_signs,row count preserved after cleaning,True
+vital_signs,all dates observed and landmark eligible,True
+vital_signs,record identifiers unique,True
+vital_signs,outcome fields absent,True
+all,Part I clinical items contain no 101,True
+all,Part III clinical fields contain no 101,True
+all,Part IV clinical items contain no 101,True
+all,Postural hypotension categories are valid,True
+all,REM-sleep behavior categories are valid,True
+all,Incomplete GDS forms have no total,True
+all,Complete GDS totals are within 0–15,True
+all,Clean BMI is within 10–60,True

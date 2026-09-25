@@ -1,0 +1,27 @@
+feature,descriptive_name,corrected_role,documented_legacy_test
+Years_since_PD_diagnosis,Years since PD diagnosis,continuous_or_scale,kruskal_wallis
+Age,Age at landmark,continuous_or_scale,not_documented
+DXPOSINS,Postural instability at diagnosis,nominal,chi_square
+DXRIGID,Rigidity at diagnosis,nominal,chi_square
+DOPTHERST,Dopaminergic therapy started,nominal,chi_square
+MCATOT,MoCA total score,continuous_or_scale,kruskal_wallis
+FRZGT12M,Freezing of gait severity,ordinal,chi_square
+SCAU14,Lightheaded after standing,ordinal,chi_square
+SCAU16,Fainting,ordinal,chi_square
+GDS_TOTAL,GDS-15 depression total,continuous_or_scale,kruskal_wallis
+NQ_GAUSSIAN_REVISION,Neuro-QoL Gaussian mobility score (8 items),continuous_or_scale,not_documented
+NP1RTOT,MDS-UPDRS Part I rater total,continuous_or_scale,not_documented
+BMI,Body mass index,continuous_or_scale,one_way_anova
+NP1SLPD,Daytime sleepiness,ordinal,chi_square
+NP1URIN,Urinary problems,ordinal,chi_square
+NP3GAIT_COMBINED_MAX,"Part III gait, combined states",ordinal,chi_square
+NP3PSTBL_COMBINED_MAX,"Part III postural stability, combined states",ordinal,chi_square
+NHY_COMBINED_MAX,"Hoehn–Yahr stage, combined states",ordinal,chi_square
+FEATPOSHYP,Postural hypotension clinical feature,nominal,chi_square
+NP3TOT_COMBINED_MAX,"MDS-UPDRS Part III motor total, combined states",continuous_or_scale,not_documented
+NP4TOT,MDS-UPDRS Part IV complications total,continuous_or_scale,kruskal_wallis
+ANYFAMPD,Family history of Parkinson's disease,nominal,chi_square
+DXTREMOR,Resting tremor at diagnosis,nominal,chi_square
+DXBRADY,Bradykinesia at diagnosis,nominal,chi_square
+DOMSIDE,Predominantly affected side at onset,nominal,chi_square
+NP1CNST,Constipation severity,ordinal,not_in_legacy_screen

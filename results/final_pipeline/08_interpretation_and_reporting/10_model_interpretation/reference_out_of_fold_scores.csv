@@ -1,0 +1,8 @@
+model,metric,reference_out_of_fold_score
+direct_system,macro_f1,0.5282173047327211
+direct_system,rare_fall_recall,0.4403864734299517
+stage_1,macro_f1,0.6797516093339022
+stage_2,macro_f1,0.6766283389331991
+stage_2,rare_fall_recall,0.8857004830917875
+two_stage_system,macro_f1,0.5414192941004194
+two_stage_system,rare_fall_recall,0.4405797101449275

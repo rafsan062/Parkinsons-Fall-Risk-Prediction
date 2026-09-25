@@ -1,0 +1,38 @@
+{
+  "run_version": "final-notebook-08-sensitivity-analyses-v2-26-features-d28",
+  "input_sha256": {
+    "primary_predictors": "930b289c4d4897e00b874aa4d372ea9a1714561b760d074331daca425ee8d991",
+    "primary_outcomes": "e53328e1ac116da1851a4a32a1b20154f9b6f925cc545c68f1d24506809591fa",
+    "flag_predictors": "d271777d360e6b0fc070a96d235a898136c942b4338bfe3c85fb229e38030ffb",
+    "on_off_predictors": "dc00593bd95283179a44a68099f040f38a1489f1a0add71403389635acfc5506",
+    "broad_predictors": "4fefd74bd9a7b0170603dd71db43d9bd01a292db85aae68dfa8b8ce1791512d7",
+    "broad_outcomes": "913d5596f6de27d2a9a066c85b89ea0cb57fd944658f57d40e8d4cb968670e67",
+    "latest_constipation_predictors": "ea4b0da8859c5499b1477315e2a32874c6711098755df7c88db5ddc9062eda06",
+    "feature_manifest": "f507fead0ba094eb6e3da70b49c4ddb3bf1e4f306caacab5113d24deaed72ccd",
+    "outer_splits": "4e05a7ddc576f14c680a8e7e183d3821252b0b5f6b067f8e926371c73278ccbf",
+    "engineering_manifest": "8c6e86025f58d0ad929927c095930212f49c85678707ddb9bedd37bf3dbbbf4b",
+    "tuning_grid": "eb9b907a8c70f4f28a767495969afbe8bf1fbf753363322681888d51664a8862",
+    "tuned_winners": "f0cec8dccfe75e4b246189457187ee7910962b556c2812bfb70c6325adf7c9de",
+    "primary_selected_pipelines": "9452a83cafb6193226209f0583f8d7287b65cb4537b646d9070e0deefb266342",
+    "primary_predictions": "5cbdcc959a7d50d87d65c64cae725bc0fb33c70f798115921355acd4c2a19e80",
+    "primary_seed_metrics": "6e4eab54c6f0d5fb7b9d75fa780e32b8e7f3b1d1c1fe9d5a198cd0961de8d318",
+    "primary_tuning_validation": "9f2759e5ce4cadc890ce8db6b18d67f116a76042e62092deb4810f58b1ee5d69",
+    "primary_outer_validation": "4f0f393a12c55057d3254333300d5b306a3081245047d9fa4e79cd4232fe34a7",
+    "preflight_branches": "c17b18b6fe9e115cd8081efedbaab6439477ee49027c553e2a8284730d0c048b"
+  },
+  "branch_manifest_sha256": "2ea1b0356e399fb91048bd139c65fe0af532b6a87ea53d8350d2b17b7f05246f",
+  "added_cohort_patients": [
+    "293633",
+    "302526",
+    "344841"
+  ],
+  "refit_seed_rule": "500000 + split_seed",
+  "reproduction_score_tolerance": 1e-06,
+  "outer_test_use": "one evaluation per branch using frozen Notebook 07 winners",
+  "configuration_hash": "542c2ab52b16d83c2b1cd6abcae29585fbb20f61a27abd78c3ae3456e761cce8",
+  "python": "3.13.12",
+  "scikit_learn": "1.8.0",
+  "xgboost": "3.2.0",
+  "lightgbm": "4.7.0",
+  "catboost": "1.2.10"
+}

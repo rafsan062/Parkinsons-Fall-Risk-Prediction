@@ -1,0 +1,16 @@
+source,raw_records,linked_cohort_records,eligible_records,later_records_excluded,undated_records_excluded,eligible_patients
+Demographics_24Aug2026.csv,9038,1280,1043,237,0,1043
+Family_History_24Aug2026.csv,8933,1624,1193,267,164,1021
+PD_Diagnosis_History_24Aug2026.csv,2217,1276,1043,233,0,1043
+Initiation_of_Dopaminergic_Therapy_24Aug2026.csv,11134,1810,1245,565,0,838
+Montreal_Cognitive_Assessment__MoCA__24Aug2026.csv,20498,6519,4984,1535,0,1040
+Determination_of_Freezing_and_Falls_24Aug2026.csv,13923,4545,2944,1601,0,977
+SCOPA-AUT_24Aug2026.csv,21707,7006,5421,1585,0,1040
+Neuro_QoL__Lower_Extremity_Function__Mobility__-_Short_Form_24Aug2026.csv,13900,4516,2944,1572,0,976
+Geriatric_Depression_Scale__Short_Version__24Aug2026.csv,21999,7000,5421,1579,0,1040
+MDS-UPDRS_Part_I_24Aug2026.csv,33318,11549,9320,2229,0,1040
+MDS-UPDRS_Part_I_Patient_Questionnaire_24Aug2026.csv,37820,12528,9396,3132,0,1040
+MDS-UPDRS_Part_III_24Aug2026.csv,39336,16644,13036,3608,0,1040
+MDS-UPDRS_Part_IV__Motor_Complications_24Aug2026.csv,11186,8019,6249,1770,0,815
+Other_Clinical_Features_24Aug2026.csv,27386,9373,7174,2199,0,1040
+Vital_Signs_24Aug2026.csv,32250,10659,8781,1878,0,1043

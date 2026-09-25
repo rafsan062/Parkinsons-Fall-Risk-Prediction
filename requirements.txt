@@ -1,0 +1,12 @@
+pandas
+numpy
+scipy
+matplotlib
+scikit-learn==1.8.0
+catboost==1.2.10
+xgboost==3.2.0
+lightgbm==4.7.0
+cloudpickle==3.1.2
+shap==0.52.0
+jupyter
+nbclient

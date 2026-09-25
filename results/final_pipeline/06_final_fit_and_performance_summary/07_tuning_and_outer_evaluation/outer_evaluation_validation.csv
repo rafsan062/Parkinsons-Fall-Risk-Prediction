@@ -1,0 +1,14 @@
+check,passed,detail
+focused tuning validation passed,True,9 tuning checks
+all 20 outer seeds completed,True,one checkpoint per seed
+direct and two-stage each have 20 seed metrics,True,paired systems
+each system predicts 312 patients per seed,True,untouched 30% holdout
+"one prediction per patient, seed, and system",True,no duplicate test predictions
+systems use identical patient rows,True,paired comparison
+all scores are finite and sum to one,True,predict_proba or fixed decision-score conversion
+all outcome classes occur in every test set,True,stratified splits
+three frozen winners refitted per seed,True,"direct, Stage 1, and Stage 2"
+Stage 2 trains only on true fallers,True,fewer patients than direct and Stage 1
+all refitted pipelines retained columns,True,no empty final model input
+outer metrics are finite and bounded,True,20 paired seed estimates
+run identity still matches,True,same frozen inputs and grids

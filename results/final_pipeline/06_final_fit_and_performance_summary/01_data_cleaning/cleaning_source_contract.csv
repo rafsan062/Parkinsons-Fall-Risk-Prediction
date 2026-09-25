@@ -1,0 +1,16 @@
+source,file,required_fields,missing_fields,contract_passed
+demographics,Demographics_24Aug2026.csv,12,,True
+family_history,Family_History_24Aug2026.csv,4,,True
+diagnosis_history,PD_Diagnosis_History_24Aug2026.csv,9,,True
+dopamine_therapy,Initiation_of_Dopaminergic_Therapy_24Aug2026.csv,4,,True
+moca,Montreal_Cognitive_Assessment__MoCA__24Aug2026.csv,4,,True
+freezing,Determination_of_Freezing_and_Falls_24Aug2026.csv,4,,True
+scopa_aut,SCOPA-AUT_24Aug2026.csv,5,,True
+neuroqol_mobility,Neuro_QoL__Lower_Extremity_Function__Mobility__-_Short_Form_24Aug2026.csv,11,,True
+gds15,Geriatric_Depression_Scale__Short_Version__24Aug2026.csv,18,,True
+updrs_part_i,MDS-UPDRS_Part_I_24Aug2026.csv,10,,True
+updrs_part_i_patient,MDS-UPDRS_Part_I_Patient_Questionnaire_24Aug2026.csv,11,,True
+updrs_part_iii,MDS-UPDRS_Part_III_24Aug2026.csv,13,,True
+updrs_part_iv,MDS-UPDRS_Part_IV__Motor_Complications_24Aug2026.csv,10,,True
+other_clinical,Other_Clinical_Features_24Aug2026.csv,5,,True
+vital_signs,Vital_Signs_24Aug2026.csv,11,,True

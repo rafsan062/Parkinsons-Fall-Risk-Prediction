@@ -1,0 +1,9 @@
+selection,patients_with_value,latest_month_ties,ties_with_different_values
+demographics coherent row,1043,0,0
+diagnosis coherent row,1043,0,0
+latest status: MCATOT,1040,0,0
+latest status: GDS_TOTAL,1040,0,0
+latest-status alternative: NP1CNST,1040,0,0
+Neuro-QoL coherent form,976,0,0
+latest status: BMI,1040,0,0
+orthostatic coherent visit,1043,2,0

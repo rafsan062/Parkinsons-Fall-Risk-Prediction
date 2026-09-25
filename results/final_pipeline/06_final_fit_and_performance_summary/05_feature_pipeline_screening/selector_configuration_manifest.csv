@@ -1,0 +1,9 @@
+configuration_id,selector,selector_parameter,reference_model,candidate_kind,feature_set,selector_implementation,pipeline_key
+SEL_01,none,all,logistic,selector_configuration,final_26,no_supervised_removal,raw__none__all
+SEL_02,corrected_fdr,q<=0.05,logistic,selector_configuration,final_26,within_fold_bh_fdr,raw__corrected_fdr__q<=0.05
+SEL_03,l1,C=0.1,logistic,selector_configuration,final_26,one_vs_rest_liblinear_l1,raw__l1__C=0.1
+SEL_04,l1,C=1.0,logistic,selector_configuration,final_26,one_vs_rest_liblinear_l1,raw__l1__C=1.0
+SEL_05,none,all,extra_trees,selector_configuration,final_26,no_supervised_removal,raw__none__all
+SEL_06,corrected_fdr,q<=0.05,extra_trees,selector_configuration,final_26,within_fold_bh_fdr,raw__corrected_fdr__q<=0.05
+SEL_07,extra_trees,threshold=median,extra_trees,selector_configuration,final_26,shallow_extra_trees_group_importance,raw__extra_trees__threshold=median
+SEL_08,extra_trees,threshold=1.25*median,extra_trees,selector_configuration,final_26,shallow_extra_trees_group_importance,raw__extra_trees__threshold=1.25*median

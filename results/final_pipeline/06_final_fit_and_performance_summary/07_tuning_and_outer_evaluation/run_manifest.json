@@ -1,0 +1,29 @@
+{
+  "run_version": "final-notebook-07-focused-tuning-and-outer-evaluation-v2-26-features-d28",
+  "input_sha256": {
+    "predictors": "930b289c4d4897e00b874aa4d372ea9a1714561b760d074331daca425ee8d991",
+    "outcomes": "e53328e1ac116da1851a4a32a1b20154f9b6f925cc545c68f1d24506809591fa",
+    "feature_manifest": "f507fead0ba094eb6e3da70b49c4ddb3bf1e4f306caacab5113d24deaed72ccd",
+    "outer_splits": "4e05a7ddc576f14c680a8e7e183d3821252b0b5f6b067f8e926371c73278ccbf",
+    "inner_folds": "d708986d868449cdf4462d854c5f838abd3c48b7f899308d0c62d412578f2589",
+    "engineering_manifest": "8c6e86025f58d0ad929927c095930212f49c85678707ddb9bedd37bf3dbbbf4b",
+    "retained_combinations": "ba482979ac137c714632c4d94b14c6822366b933fd4ea9d833eb11f6d9025c8c",
+    "family_validation": "213d966ba174c09f1a2746ec1561e5ebc5d9cbe97c4cf9216c9a463afd47e857"
+  },
+  "tuning_grid_sha256": "eb9b907a8c70f4f28a767495969afbe8bf1fbf753363322681888d51664a8862",
+  "targets": [
+    "direct",
+    "stage_1",
+    "stage_2"
+  ],
+  "inner_folds": 5,
+  "selection_metric": "mean inner-fold macro F1",
+  "near_tie_margin": 0.01,
+  "outer_test_use": "one evaluation after local winner selection",
+  "configuration_hash": "a81970599fbd5adce5a70d1b43e0e00baddf6b408fac286df01bba6e45df6ccc",
+  "python": "3.13.12",
+  "scikit_learn": "1.8.0",
+  "xgboost": "3.2.0",
+  "lightgbm": "4.7.0",
+  "catboost": "1.2.10"
+}

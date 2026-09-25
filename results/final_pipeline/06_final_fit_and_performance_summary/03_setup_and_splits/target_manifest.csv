@@ -1,0 +1,4 @@
+target,eligible_training_patients,label_definition,near_tie_recall
+direct,all outer-training patients,"falls_class: 0=no, 1=rare, 2=recurrent",rare-fall recall
+stage_1,all outer-training patients,"0=no fall, 1=any fall",any-fall recall
+stage_2,true rare and recurrent fallers only,"0=rare fall, 1=recurrent fall",rare-fall recall

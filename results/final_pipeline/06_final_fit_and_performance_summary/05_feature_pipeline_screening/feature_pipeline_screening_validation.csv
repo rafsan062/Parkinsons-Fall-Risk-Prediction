@@ -1,0 +1,16 @@
+check,passed,detail
+26-source candidate contract,True,"one 1,040-patient final input"
+60 selector units complete,True,20 seeds × 3 targets
+five selector folds per configuration,True,all eight configurations
+four selector families screened,True,"none, FDR, L1, and Extra Trees"
+every selected subset is nonempty,True,all selector fits
+60 engineering units complete,True,20 seeds × 3 targets
+seven compatible engineering branches screened,True,four interactions plus three PCA-threshold branches
+five paired folds per engineering branch,True,same folds as the raw baseline
+engineering sources remain inside final 26,True,no additional raw predictor
+all screening metrics are bounded,True,"macro F1, recalls, balanced accuracy, and accuracy"
+two pipelines retained per seed and target,True,120 queue rows
+retained pipelines are distinct,True,reference-model duplicates cannot fill both slots
+no outer-test result generated,True,Notebook 05 uses inner validation only
+no patient-level transformed matrix saved,True,only configuration and fold summaries are written
+checkpoint identity matches,True,input and configuration hash

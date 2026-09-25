@@ -1,0 +1,27 @@
+feature,descriptive_name,partitions,median_source_missing_n,median_adjusted_q,fdr_significant_partitions,median_effect_size,fdr_significant_fraction
+NP4TOT,MDS-UPDRS Part IV complications total,100,126.0,0.0010793822034361536,98,0.17680014040890613,0.98
+ANYFAMPD,Family history of Parkinson's disease,100,34.5,0.21486988747922406,27,0.09798337843082883,0.27
+DOPTHERST,Dopaminergic therapy started,100,113.5,0.28337533890633443,20,0.09349569043599618,0.2
+NQ_GAUSSIAN_REVISION,Neuro-QoL Gaussian mobility score (8 items),100,37.0,0.9258167896436114,10,0.05294404973771735,0.1
+FRZGT12M,Freezing of gait severity,100,36.0,0.9449440760974646,10,0.04921330868172687,0.1
+Age,Age at landmark,100,0.0,1.0,0,0.0,0.0
+BMI,Body mass index,100,0.0,1.0,0,0.0,0.0
+DOMSIDE,Predominantly affected side at onset,100,0.0,1.0,0,0.0,0.0
+DXBRADY,Bradykinesia at diagnosis,100,0.0,1.0,0,0.0,0.0
+DXPOSINS,Postural instability at diagnosis,100,1.0,1.0,0,0.0,0.0
+DXRIGID,Rigidity at diagnosis,100,0.0,1.0,0,0.0,0.0
+DXTREMOR,Resting tremor at diagnosis,100,0.0,1.0,0,0.0,0.0
+FEATPOSHYP,Postural hypotension clinical feature,100,0.0,1.0,0,0.0,0.0
+GDS_TOTAL,GDS-15 depression total,100,0.0,1.0,0,0.0,0.0
+MCATOT,MoCA total score,100,0.0,1.0,0,0.0,0.0
+NHY_COMBINED_MAX,"Hoehn–Yahr stage, combined states",100,0.0,1.0,0,0.0,0.0
+NP1CNST,Constipation severity,100,0.0,1.0,0,0.0,0.0
+NP1RTOT,MDS-UPDRS Part I rater total,100,0.0,1.0,0,0.0,0.0
+NP1SLPD,Daytime sleepiness,100,0.0,1.0,0,0.0,0.0
+NP1URIN,Urinary problems,100,0.0,1.0,0,0.0,0.0
+NP3GAIT_COMBINED_MAX,"Part III gait, combined states",100,0.0,1.0,0,0.0,0.0
+NP3PSTBL_COMBINED_MAX,"Part III postural stability, combined states",100,0.0,1.0,0,0.0,0.0
+NP3TOT_COMBINED_MAX,"MDS-UPDRS Part III motor total, combined states",100,0.0,1.0,0,0.0,0.0
+SCAU14,Lightheaded after standing,100,0.0,1.0,0,0.0,0.0
+SCAU16,Fainting,100,0.0,1.0,0,0.0,0.0
+Years_since_PD_diagnosis,Years since PD diagnosis,100,0.0,1.0,0,0.0,0.0

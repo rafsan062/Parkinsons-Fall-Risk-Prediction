@@ -1,0 +1,88 @@
+{
+  "run_version": "final-notebook-06-nine-family-screen-v2-26-features-d28",
+  "input_sha256": {
+    "predictors": "930b289c4d4897e00b874aa4d372ea9a1714561b760d074331daca425ee8d991",
+    "outcomes": "e53328e1ac116da1851a4a32a1b20154f9b6f925cc545c68f1d24506809591fa",
+    "feature_manifest": "f507fead0ba094eb6e3da70b49c4ddb3bf1e4f306caacab5113d24deaed72ccd",
+    "outer_splits": "4e05a7ddc576f14c680a8e7e183d3821252b0b5f6b067f8e926371c73278ccbf",
+    "inner_folds": "d708986d868449cdf4462d854c5f838abd3c48b7f899308d0c62d412578f2589",
+    "retained_pipelines": "68cf8552ed45f0a09de9d21ff29b4dd7cfea8a331fd03784391c09793de0411c",
+    "engineering_manifest": "8c6e86025f58d0ad929927c095930212f49c85678707ddb9bedd37bf3dbbbf4b"
+  },
+  "model_scope": [
+    {
+      "model_family": "logistic",
+      "backend": "scaled_dense",
+      "screening_parameters": "{\"C\": 1.0, \"class_weight\": \"balanced\"}",
+      "candidate_winner": true
+    },
+    {
+      "model_family": "linear_svc",
+      "backend": "scaled_dense",
+      "screening_parameters": "{\"C\": 1.0, \"class_weight\": \"balanced\"}",
+      "candidate_winner": true
+    },
+    {
+      "model_family": "rbf_svc",
+      "backend": "scaled_dense",
+      "screening_parameters": "{\"C\": 1.0, \"class_weight\": \"balanced\", \"gamma\": \"scale\"}",
+      "candidate_winner": true
+    },
+    {
+      "model_family": "random_forest",
+      "backend": "unscaled_dense",
+      "screening_parameters": "{\"class_weight\": \"balanced\", \"max_depth\": 6, \"min_samples_leaf\": 5, \"n_estimators\": 300}",
+      "candidate_winner": true
+    },
+    {
+      "model_family": "extra_trees",
+      "backend": "unscaled_dense",
+      "screening_parameters": "{\"class_weight\": \"balanced\", \"max_depth\": 6, \"min_samples_leaf\": 5, \"n_estimators\": 300}",
+      "candidate_winner": true
+    },
+    {
+      "model_family": "hist_gradient_boosting",
+      "backend": "native",
+      "screening_parameters": "{\"class_weight\": \"balanced\", \"l2_regularization\": 1.0, \"learning_rate\": 0.05, \"max_leaf_nodes\": 15}",
+      "candidate_winner": true
+    },
+    {
+      "model_family": "xgboost",
+      "backend": "native",
+      "screening_parameters": "{\"colsample_bytree\": 0.8, \"learning_rate\": 0.08, \"max_depth\": 2, \"n_estimators\": 300, \"reg_lambda\": 5.0, \"sample_weight\": \"balanced\", \"subsample\": 0.8}",
+      "candidate_winner": true
+    },
+    {
+      "model_family": "lightgbm",
+      "backend": "native",
+      "screening_parameters": "{\"class_weight\": \"balanced\", \"colsample_bytree\": 0.8, \"learning_rate\": 0.05, \"min_child_samples\": 20, \"n_estimators\": 300, \"num_leaves\": 15, \"reg_lambda\": 1.0, \"subsample\": 0.8, \"subsample_freq\": 1}",
+      "candidate_winner": true
+    },
+    {
+      "model_family": "catboost",
+      "backend": "native",
+      "screening_parameters": "{\"auto_class_weights\": \"Balanced\", \"depth\": 4, \"iterations\": 300, \"l2_leaf_reg\": 5.0, \"learning_rate\": 0.05}",
+      "candidate_winner": true
+    },
+    {
+      "model_family": "dummy_prior",
+      "backend": "none",
+      "screening_parameters": "{\"strategy\": \"prior\"}",
+      "candidate_winner": false
+    }
+  ],
+  "targets": [
+    "direct",
+    "stage_1",
+    "stage_2"
+  ],
+  "inner_folds": 5,
+  "selection_metric": "mean inner-fold macro F1",
+  "near_tie_margin": 0.01,
+  "configuration_hash": "be25e329310c732426f649d1e61153e6fb9df97d5a3c8577ecab258cf965a082",
+  "python": "3.13.12",
+  "scikit_learn": "1.8.0",
+  "xgboost": "3.2.0",
+  "lightgbm": "4.7.0",
+  "catboost": "1.2.10"
+}

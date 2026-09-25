@@ -1,0 +1,9 @@
+check,passed
+all model hashes match Notebook 09,True
+"SHAP covers direct, Stage 1, and Stage 2",True
+all SHAP values are finite,True
+SHAP additivity error is below 1e-6,True
+grouped SHAP preserves additivity,True
+"patient alignment covers all 1,040 patients",True
+two-stage probabilities sum to one,True
+six requested SHAP plots exist,True

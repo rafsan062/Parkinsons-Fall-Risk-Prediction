@@ -1,0 +1,14 @@
+check,passed,detail
+seed 0 reproduction gate passed,True,"Notebook 05, 06, and 07 decisions reproduced"
+full-cohort folds cover every patient once with all classes,True,"five stratified folds, seed 42"
+Stage A complete,True,8 selector and 7 engineering configurations × 5 folds × 3 targets
+two distinct feature pipelines retained per target,True,Notebook 05 retention rule
+Stage B complete,True,2 pipelines × 9 families × 5 folds × 3 targets
+two combinations retained per target,True,Notebook 06 retention rule
+Stage C complete,True,360 frozen-grid fold fits
+one frozen-grid winner per target,True,Notebook 07 selection rule
+final training sets are correct,True,Stage 2 uses the 328 true fallers
+all final pipelines retained columns,True,no empty model input
+direct and two-stage scores are valid,True,hard-routed two-stage composition
+saved models reload identically in a fresh process,True,"direct, Stage 1, and Stage 2 files"
+run identity still matches,True,"same frozen inputs, folds, and seeds"

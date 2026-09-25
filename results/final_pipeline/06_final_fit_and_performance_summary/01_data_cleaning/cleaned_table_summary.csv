@@ -1,0 +1,16 @@
+table,records,patients,columns
+demographics,1043,1043,16
+family_history,1193,1021,8
+diagnosis_history,1043,1043,13
+dopamine_therapy,1245,838,8
+other_clinical,7174,1040,9
+moca,4984,1040,8
+freezing,2944,977,8
+scopa_aut,5421,1040,9
+neuroqol_mobility,2944,976,15
+updrs_part_i_patient,9396,1040,15
+updrs_part_iv,6249,815,14
+updrs_part_i,9320,1040,14
+updrs_part_iii,13036,1040,20
+gds15,5421,1040,24
+vital_signs,8781,1043,23

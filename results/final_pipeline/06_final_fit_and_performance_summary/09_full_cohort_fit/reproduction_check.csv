@@ -1,0 +1,4 @@
+stage,compared_rows,same_decisions,max_macro_f1_difference,passed
+Notebook 05 retained feature pipelines,6,True,0.0,True
+Notebook 06 retained combinations,6,True,0.0,True
+Notebook 07 tuned winners,3,True,0.0,True

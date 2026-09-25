@@ -1,0 +1,6 @@
+check,passed,detail
+every primary prediction reproduced,True,"12,480 paired rows"
+true classes identical,True,same outcomes and test patients
+predicted classes identical,True,direct and hard-routed two-stage
+scores agree within tolerance,True,maximum absolute difference 5.55e-16
+refitted selected columns identical,True,60 seed/target pipelines

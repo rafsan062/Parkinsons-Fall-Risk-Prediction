@@ -1,0 +1,63 @@
+{
+  "run_version": "final-notebook-12-shap-llm-handoff-v1",
+  "source_model_manifest_sha256": "94533593c766aad3d529938dc06ec157a923f7ab64ebf6d7eb96b7008d3643db",
+  "shap_version": "0.52.0",
+  "patients": 1040,
+  "models": {
+    "direct": {
+      "model_file": "direct_pipeline.pkl",
+      "model_sha256": "7584c8f94e50de44ae58bf825670db13484c8ec05e93a829358182502d6ba5e9",
+      "classes": [
+        "no fall",
+        "rare fall",
+        "recurrent fall"
+      ],
+      "model_columns": 29,
+      "clinical_groups": 20,
+      "shap_shape": [
+        1040,
+        29,
+        3
+      ],
+      "output_scale": "raw class score",
+      "max_additivity_error": 2.6645352591003757e-15
+    },
+    "stage_1": {
+      "model_file": "stage_1_pipeline.pkl",
+      "model_sha256": "4fbf8d985b5723db0c550ac97fefe533f5e7753405ff040ec4f590049c2e144d",
+      "classes": [
+        "no fall",
+        "any fall"
+      ],
+      "model_columns": 29,
+      "clinical_groups": 20,
+      "shap_shape": [
+        1040,
+        29,
+        2
+      ],
+      "output_scale": "class probability",
+      "max_additivity_error": 7.271960811294775e-15
+    },
+    "stage_2": {
+      "model_file": "stage_2_pipeline.pkl",
+      "model_sha256": "b863a19014fa648825ea18d1712e8d96a28dae27e3d7382fa06f966a4bf7bcdc",
+      "classes": [
+        "rare fall",
+        "recurrent fall"
+      ],
+      "model_columns": 25,
+      "clinical_groups": 13,
+      "shap_shape": [
+        1040,
+        25,
+        2
+      ],
+      "output_scale": "class probability",
+      "max_additivity_error": 2.192690473634684e-15
+    }
+  },
+  "two_stage_interpretation": "Stage 1 and Stage 2 are separate hard-routed components. Do not add their SHAP values. Stage 2 applies only when Stage 1 predicts any fall.",
+  "performance_boundary": "These full-cohort explanations are not performance estimates; use Notebook 07 outer evaluation.",
+  "governance": "NPZ files and patient_explanation_index.csv contain derived patient-level PPMI data. Do not publish them openly without confirming PPMI data-use permission."
+}

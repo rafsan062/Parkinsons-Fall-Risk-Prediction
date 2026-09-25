@@ -1,0 +1,8 @@
+check,passed
+all upstream validations passed,True
+two systems summarized,True
+20 outer splits per target,True
+five named sensitivities summarized,True
+26 candidate features summarized,True
+three full-cohort artifacts summarized,True
+interpretation covers direct and two-stage systems,True

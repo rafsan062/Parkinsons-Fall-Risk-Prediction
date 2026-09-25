@@ -1,0 +1,21 @@
+model,label,mean_drop,sd_drop,folds_positive
+direct_system,Constipation,0.0208674870485282,0.0165306309278185,4
+direct_system,"Freezing of gait, preceding 12 months",0.0206045604129703,0.01771705366991,4
+direct_system,Neuro-QoL Gaussian mobility score (8 items),0.0188511733508297,0.0082925293589614,5
+direct_system,Age,0.0133511555434229,0.008205093050177,5
+direct_system,MDS-UPDRS Part III motor total,0.0087290886316135,0.0087002403837631,5
+direct_system,Urinary problems,0.0062997489070206,0.0077961963506295,4
+direct_system,Daytime sleepiness,0.006216253684634,0.0037109602643044,4
+direct_system,Family history of PD,0.0044445050453047,0.0086678469287601,3
+direct_system,MDS-UPDRS Part IV total (motor complications),0.002711977171522,0.0095387206930401,4
+direct_system,MoCA total (cognition),0.0012411510054879,0.0158723091059412,4
+two_stage_system,"Freezing of gait, preceding 12 months",0.0542363018609716,0.0260125020943745,5
+two_stage_system,MDS-UPDRS Part IV total (motor complications),0.0397128744590961,0.0156975893319055,5
+two_stage_system,Neuro-QoL Gaussian mobility score (8 items),0.0321358824951302,0.0119467423176116,5
+two_stage_system,Family history of PD,0.0151637192031427,0.024773145777004,3
+two_stage_system,Years since PD diagnosis,0.0147498644613956,0.0177134969650219,4
+two_stage_system,Hoehn and Yahr stage,0.0109140169785274,0.0195910433566134,4
+two_stage_system,Dominant side at diagnosis,0.0101507313587309,0.0063613624940827,5
+two_stage_system,Constipation,0.0034573033153906,0.0092144210769476,4
+two_stage_system,Urinary problems,0.0017208858440138,0.0161987598243095,3
+two_stage_system,Symptomatic orthostatic hypotension documented,0.0015270205479916,0.00960503954804,2

@@ -1,0 +1,10 @@
+check,passed,detail
+all 120 retained-combination units complete,True,one checkpoint unit per retained combination
+planned inner-fold fits complete,True,"6,550 fits"
+every active frozen grid row evaluated,True,only families retained by Notebook 06 are active
+five folds per candidate and grid row,True,paired inner validation
+all fitted pipelines retained columns,True,no empty model input
+all tuning metrics are bounded,True,inner-fold metrics
+one tuned winner per seed and target,True,20 seeds × 3 targets
+no outer-test result used during tuning,True,inner validation only
+checkpoint identity matches,True,"input, grid, and software identity"

@@ -1,0 +1,4 @@
+target,feature_selection,model_family,selected_source_groups,training_patients,parameters
+direct,raw__corrected_fdr__q<=0.05,catboost,20,1040,"{""auto_class_weights"": ""Balanced"", ""depth"": 6, ""iterations"": 300, ""l2_leaf_reg"": 5.0, ""learning_rate"": 0.03}"
+stage_1,raw__corrected_fdr__q<=0.05,extra_trees,20,1040,"{""class_weight"": ""balanced"", ""max_depth"": null, ""min_samples_leaf"": 5, ""n_estimators"": 300}"
+stage_2,raw__extra_trees__threshold=median,random_forest,13,328,"{""class_weight"": null, ""max_depth"": null, ""min_samples_leaf"": 1, ""n_estimators"": 300}"

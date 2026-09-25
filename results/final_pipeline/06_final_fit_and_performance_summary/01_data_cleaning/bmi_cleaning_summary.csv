@@ -1,0 +1,6 @@
+check,records,patients
+Height records corrected,23,20
+Patients with unresolved height conflict,,9
+Weight records invalidated,11,11
+Calculated BMI outside 10–60,0,0
+Clean BMI available,4760,1040

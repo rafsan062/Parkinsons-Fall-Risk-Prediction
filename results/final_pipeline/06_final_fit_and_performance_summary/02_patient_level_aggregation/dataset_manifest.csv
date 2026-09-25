@@ -1,0 +1,6 @@
+dataset,patients,features,role
+primary_1040_26_predictors,1040,26,primary
+sensitivity_1043_cohort,1043,26,one-change sensitivity
+sensitivity_latest_constipation,1040,26,one-change sensitivity
+sensitivity_part_iii_101_flags,1040,29,one-change sensitivity
+sensitivity_part_iii_on_off,1040,30,one-change sensitivity

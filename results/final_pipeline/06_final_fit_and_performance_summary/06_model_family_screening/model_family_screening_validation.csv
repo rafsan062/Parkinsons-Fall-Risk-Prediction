@@ -1,0 +1,12 @@
+check,passed,detail
+60 target-specific units complete,True,2 pipelines × 9 families × 5 folds
+all nine model families evaluated,True,frozen family scope
+five folds per pipeline and family,True,paired inner validation
+all fitted pipelines retained columns,True,no empty model input
+all metrics are bounded,True,candidate-fold results
+two combinations retained per seed and target,True,120 focused-tuning rows
+dummy benchmark has five folds per unit,True,benchmark only
+dummy cannot enter retained combinations,True,candidate_winner is false
+no outer-test result generated,True,inner validation only
+checkpoint identity matches,True,input and model-scope hash
+no patient-level transformed matrix saved,True,only fold metrics and configuration metadata are written

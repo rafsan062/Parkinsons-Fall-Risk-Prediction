@@ -1,0 +1,32 @@
+{
+  "run_version": "final-notebook-09-full-cohort-fit-v2-26-features-d28",
+  "input_sha256": {
+    "predictors": "930b289c4d4897e00b874aa4d372ea9a1714561b760d074331daca425ee8d991",
+    "outcomes": "e53328e1ac116da1851a4a32a1b20154f9b6f925cc545c68f1d24506809591fa",
+    "feature_manifest": "f507fead0ba094eb6e3da70b49c4ddb3bf1e4f306caacab5113d24deaed72ccd",
+    "outer_splits": "4e05a7ddc576f14c680a8e7e183d3821252b0b5f6b067f8e926371c73278ccbf",
+    "inner_folds": "d708986d868449cdf4462d854c5f838abd3c48b7f899308d0c62d412578f2589",
+    "selector_manifest": "3e10c3a7fee54da1e7dd87f721d50872c78488059f78f1bd27cd9041ab70bca7",
+    "engineering_manifest": "8c6e86025f58d0ad929927c095930212f49c85678707ddb9bedd37bf3dbbbf4b",
+    "model_scope": "b15d09826808c416d56ab843ddcfc3259f555160f1b4478db6ea49d272692d2c",
+    "tuning_grid": "eb9b907a8c70f4f28a767495969afbe8bf1fbf753363322681888d51664a8862",
+    "saved_retained_pipelines": "68cf8552ed45f0a09de9d21ff29b4dd7cfea8a331fd03784391c09793de0411c",
+    "saved_retained_combinations": "ba482979ac137c714632c4d94b14c6822366b933fd4ea9d833eb11f6d9025c8c",
+    "saved_tuned_winners": "f0cec8dccfe75e4b246189457187ee7910962b556c2812bfb70c6325adf7c9de",
+    "primary_outer_validation": "4f0f393a12c55057d3254333300d5b306a3081245047d9fa4e79cd4232fe34a7"
+  },
+  "full_cohort_folds_sha256": "59e85c06f98480ef7c4f26157c8bee11ffb4b3e8db3faa7a5c81d6689934ac79",
+  "full_cohort_seed": 42,
+  "reproduction_seed": 0,
+  "final_fit_seed": 500042,
+  "stage_seed_rules": "Notebook 05: 100000/200000; Notebook 06: 300000; Notebook 07: 400000 + split_seed * 10 + fold",
+  "selection_metric": "mean inner-fold macro F1",
+  "near_tie_margin": 0.01,
+  "configuration_hash": "66a9a9a77e08bcec453ee8ff0f6485fe256bf6bb302106a78c1a4b5b8beae001",
+  "python": "3.13.12",
+  "scikit_learn": "1.8.0",
+  "xgboost": "3.2.0",
+  "lightgbm": "4.7.0",
+  "catboost": "1.2.10",
+  "cloudpickle": "3.1.2"
+}

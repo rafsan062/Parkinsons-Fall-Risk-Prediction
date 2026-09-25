@@ -1,0 +1,198 @@
+{
+  "run_version": "final-notebook-05-v4-26-features-d28",
+  "input_sha256": {
+    "predictors": "930b289c4d4897e00b874aa4d372ea9a1714561b760d074331daca425ee8d991",
+    "outcomes": "e53328e1ac116da1851a4a32a1b20154f9b6f925cc545c68f1d24506809591fa",
+    "feature_manifest": "f507fead0ba094eb6e3da70b49c4ddb3bf1e4f306caacab5113d24deaed72ccd",
+    "outer_splits": "4e05a7ddc576f14c680a8e7e183d3821252b0b5f6b067f8e926371c73278ccbf",
+    "inner_folds": "d708986d868449cdf4462d854c5f838abd3c48b7f899308d0c62d412578f2589"
+  },
+  "selector_configurations": [
+    {
+      "configuration_id": "SEL_01",
+      "selector": "none",
+      "selector_parameter": "all",
+      "reference_model": "logistic",
+      "candidate_kind": "selector_configuration",
+      "feature_set": "final_26",
+      "selector_implementation": "no_supervised_removal",
+      "pipeline_key": "raw__none__all"
+    },
+    {
+      "configuration_id": "SEL_02",
+      "selector": "corrected_fdr",
+      "selector_parameter": "q<=0.05",
+      "reference_model": "logistic",
+      "candidate_kind": "selector_configuration",
+      "feature_set": "final_26",
+      "selector_implementation": "within_fold_bh_fdr",
+      "pipeline_key": "raw__corrected_fdr__q<=0.05"
+    },
+    {
+      "configuration_id": "SEL_03",
+      "selector": "l1",
+      "selector_parameter": "C=0.1",
+      "reference_model": "logistic",
+      "candidate_kind": "selector_configuration",
+      "feature_set": "final_26",
+      "selector_implementation": "one_vs_rest_liblinear_l1",
+      "pipeline_key": "raw__l1__C=0.1"
+    },
+    {
+      "configuration_id": "SEL_04",
+      "selector": "l1",
+      "selector_parameter": "C=1.0",
+      "reference_model": "logistic",
+      "candidate_kind": "selector_configuration",
+      "feature_set": "final_26",
+      "selector_implementation": "one_vs_rest_liblinear_l1",
+      "pipeline_key": "raw__l1__C=1.0"
+    },
+    {
+      "configuration_id": "SEL_05",
+      "selector": "none",
+      "selector_parameter": "all",
+      "reference_model": "extra_trees",
+      "candidate_kind": "selector_configuration",
+      "feature_set": "final_26",
+      "selector_implementation": "no_supervised_removal",
+      "pipeline_key": "raw__none__all"
+    },
+    {
+      "configuration_id": "SEL_06",
+      "selector": "corrected_fdr",
+      "selector_parameter": "q<=0.05",
+      "reference_model": "extra_trees",
+      "candidate_kind": "selector_configuration",
+      "feature_set": "final_26",
+      "selector_implementation": "within_fold_bh_fdr",
+      "pipeline_key": "raw__corrected_fdr__q<=0.05"
+    },
+    {
+      "configuration_id": "SEL_07",
+      "selector": "extra_trees",
+      "selector_parameter": "threshold=median",
+      "reference_model": "extra_trees",
+      "candidate_kind": "selector_configuration",
+      "feature_set": "final_26",
+      "selector_implementation": "shallow_extra_trees_group_importance",
+      "pipeline_key": "raw__extra_trees__threshold=median"
+    },
+    {
+      "configuration_id": "SEL_08",
+      "selector": "extra_trees",
+      "selector_parameter": "threshold=1.25*median",
+      "reference_model": "extra_trees",
+      "candidate_kind": "selector_configuration",
+      "feature_set": "final_26",
+      "selector_implementation": "shallow_extra_trees_group_importance",
+      "pipeline_key": "raw__extra_trees__threshold=1.25*median"
+    }
+  ],
+  "engineering_configurations": [
+    {
+      "configuration_id": "ENG_01",
+      "branch": "INT_GAIT_X_POSTURAL_STABILITY",
+      "branch_kind": "interaction",
+      "source_features": "NP3GAIT_COMBINED_MAX | NP3PSTBL_COMBINED_MAX",
+      "variance_threshold": NaN,
+      "reference_model": "extra_trees",
+      "pipeline_key": "engineering__INT_GAIT_X_POSTURAL_STABILITY",
+      "candidate_kind": "engineered_representation",
+      "feature_set": "final_26",
+      "selector": "none",
+      "selector_parameter": "all"
+    },
+    {
+      "configuration_id": "ENG_02",
+      "branch": "INT_MOTOR_X_COGNITION",
+      "branch_kind": "interaction",
+      "source_features": "NP3TOT_COMBINED_MAX | MCATOT",
+      "variance_threshold": NaN,
+      "reference_model": "extra_trees",
+      "pipeline_key": "engineering__INT_MOTOR_X_COGNITION",
+      "candidate_kind": "engineered_representation",
+      "feature_set": "final_26",
+      "selector": "none",
+      "selector_parameter": "all"
+    },
+    {
+      "configuration_id": "ENG_03",
+      "branch": "INT_DURATION_X_MOTOR",
+      "branch_kind": "interaction",
+      "source_features": "Years_since_PD_diagnosis | NP3TOT_COMBINED_MAX",
+      "variance_threshold": NaN,
+      "reference_model": "extra_trees",
+      "pipeline_key": "engineering__INT_DURATION_X_MOTOR",
+      "candidate_kind": "engineered_representation",
+      "feature_set": "final_26",
+      "selector": "none",
+      "selector_parameter": "all"
+    },
+    {
+      "configuration_id": "ENG_04",
+      "branch": "INT_MOBILITY_X_POSTURAL_STABILITY",
+      "branch_kind": "interaction",
+      "source_features": "NQ_GAUSSIAN_REVISION | NP3PSTBL_COMBINED_MAX",
+      "variance_threshold": NaN,
+      "reference_model": "extra_trees",
+      "pipeline_key": "engineering__INT_MOBILITY_X_POSTURAL_STABILITY",
+      "candidate_kind": "engineered_representation",
+      "feature_set": "final_26",
+      "selector": "none",
+      "selector_parameter": "all"
+    },
+    {
+      "configuration_id": "ENG_05",
+      "branch": "PCA_PART_I_PATIENT_3_80",
+      "branch_kind": "pca",
+      "source_features": "NP1SLPD | NP1URIN | NP1CNST",
+      "variance_threshold": 0.8,
+      "reference_model": "extra_trees",
+      "pipeline_key": "engineering__PCA_PART_I_PATIENT_3_80",
+      "candidate_kind": "engineered_representation",
+      "feature_set": "final_26",
+      "selector": "none",
+      "selector_parameter": "all"
+    },
+    {
+      "configuration_id": "ENG_06",
+      "branch": "PCA_PART_I_PATIENT_3_90",
+      "branch_kind": "pca",
+      "source_features": "NP1SLPD | NP1URIN | NP1CNST",
+      "variance_threshold": 0.9,
+      "reference_model": "extra_trees",
+      "pipeline_key": "engineering__PCA_PART_I_PATIENT_3_90",
+      "candidate_kind": "engineered_representation",
+      "feature_set": "final_26",
+      "selector": "none",
+      "selector_parameter": "all"
+    },
+    {
+      "configuration_id": "ENG_07",
+      "branch": "PCA_PART_I_PATIENT_3_95",
+      "branch_kind": "pca",
+      "source_features": "NP1SLPD | NP1URIN | NP1CNST",
+      "variance_threshold": 0.95,
+      "reference_model": "extra_trees",
+      "pipeline_key": "engineering__PCA_PART_I_PATIENT_3_95",
+      "candidate_kind": "engineered_representation",
+      "feature_set": "final_26",
+      "selector": "none",
+      "selector_parameter": "all"
+    }
+  ],
+  "targets": [
+    "direct",
+    "stage_1",
+    "stage_2"
+  ],
+  "inner_folds": 5,
+  "selection_metric": "mean inner-fold macro F1",
+  "near_tie_margin": 0.01,
+  "configuration_hash": "1603aa55a898dcfc8b663dad12d20bd93aac2ce0b3c20752efe6b806b5c73a44",
+  "python": "3.13.12",
+  "scikit_learn": "1.8.0",
+  "numpy": "2.4.2",
+  "pandas": "2.3.3"
+}

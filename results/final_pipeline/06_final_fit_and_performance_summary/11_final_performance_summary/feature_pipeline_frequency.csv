@@ -1,0 +1,23 @@
+target,feature_pipeline,selected_splits
+direct,FDR statistical screening,7
+direct,Tree-importance selection,7
+direct,Engineered: INT_GAIT_X_POSTURAL_STABILITY,2
+direct,Engineered: INT_DURATION_X_MOTOR,1
+direct,Engineered: INT_MOTOR_X_COGNITION,1
+direct,Engineered: PCA_PART_I_PATIENT_3_80,1
+direct,Engineered: PCA_PART_I_PATIENT_3_90,1
+stage_1,L1 sparse selection,7
+stage_1,Tree-importance selection,4
+stage_1,Engineered: PCA_PART_I_PATIENT_3_90,2
+stage_1,FDR statistical screening,2
+stage_1,All candidates,1
+stage_1,Engineered: INT_DURATION_X_MOTOR,1
+stage_1,Engineered: INT_GAIT_X_POSTURAL_STABILITY,1
+stage_1,Engineered: INT_MOBILITY_X_POSTURAL_STABILITY,1
+stage_1,Engineered: PCA_PART_I_PATIENT_3_80,1
+stage_2,Tree-importance selection,8
+stage_2,FDR statistical screening,6
+stage_2,Engineered: PCA_PART_I_PATIENT_3_90,2
+stage_2,L1 sparse selection,2
+stage_2,All candidates,1
+stage_2,Engineered: PCA_PART_I_PATIENT_3_80,1

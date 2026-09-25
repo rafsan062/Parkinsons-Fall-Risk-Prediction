@@ -1,0 +1,15 @@
+check,passed,detail
+primary reproduction passed before sensitivities,True,5 reproduction checks
+reproduced seed metrics equal Notebook 07,True,40 seed/system rows
+all branch and seed units completed,True,6 branches × 20 seeds
+each branch and system has 20 seed metrics,True,five branches × two systems
+every branch scores the primary test patients once,True,fully paired with Notebook 07
+"added 1,043-cohort patients train in every seed and are never tested",True,731 direct and Stage 1 training patients
+every refit uses the frozen Notebook 07 configuration,True,"same winner, family, grid row, and parameters"
+only combined-state interactions are not constructible in S02,True,7 S02 interaction pipelines
+S02 never uses combined-state Part III columns,True,ON/OFF representation only
+Stage 2 trains only on true fallers,True,fewer patients than direct and Stage 1
+all refitted pipelines retained columns,True,no empty model input
+all scores are finite and sum to one,True,predict_proba or fixed decision-score conversion
+sensitivity metrics are finite and bounded,True,100 seed/system estimates
+run identity still matches,True,same frozen inputs and branch design

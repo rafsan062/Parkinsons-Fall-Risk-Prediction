@@ -1,0 +1,27 @@
+position,feature,data_type,valid_values_or_units,missing_value_interpretation,nullable,input_stage
+1,Years_since_PD_diagnosis,continuous,Non-negative years,Required; calculated from dated source fields.,False,raw aggregated pre-imputation value
+2,Age,continuous,Years,Required; calculated from dated source fields.,False,raw aggregated pre-imputation value
+3,DXPOSINS,categorical,No; Yes; Unknown; missing,Missing remains an explicit unknown state during preprocessing.,True,raw aggregated pre-imputation value
+4,DXRIGID,categorical,No; Yes; Unknown,Missing remains an explicit unknown state during preprocessing.,False,raw aggregated pre-imputation value
+5,DOPTHERST,categorical,No; Yes; missing,Missing is explicit; never present an imputed category as observed.,True,raw aggregated pre-imputation value
+6,MCATOT,numeric,0–30; higher is better cognition,Training-only numeric handling if missing.,False,raw aggregated pre-imputation value
+7,FRZGT12M,ordinal,0–4; higher is more severe,101 or invalid codes are missing; a form-missing indicator accompanies the model value.,True,raw aggregated pre-imputation value
+8,SCAU14,ordinal,0–3; higher is more frequent,Training-only numeric handling if missing.,False,raw aggregated pre-imputation value
+9,SCAU16,ordinal,0–3; higher is more frequent,Training-only numeric handling if missing.,False,raw aggregated pre-imputation value
+10,GDS_TOTAL,numeric,0–15; higher is greater burden,Incomplete totals remain missing until training-only preprocessing.,False,raw aggregated pre-imputation value
+11,NQ_GAUSSIAN_REVISION,continuous,Custom score; higher is not a standard Neuro-QoL T-score,A form-missing indicator accompanies the model value; label it as a custom score.,True,raw aggregated pre-imputation value
+12,NP1RTOT,numeric,0–24; higher is greater burden,Field-specific 101 values are missing before totaling.,False,raw aggregated pre-imputation value
+13,BMI,continuous,kg/m²,Implausible values are removed; remaining gaps use training-only handling.,False,raw aggregated pre-imputation value
+14,NP1SLPD,ordinal,0–4; higher is more severe,Training-only numeric handling if missing.,False,raw aggregated pre-imputation value
+15,NP1URIN,ordinal,0–4; higher is more severe,Training-only numeric handling if missing.,False,raw aggregated pre-imputation value
+16,NP3GAIT_COMBINED_MAX,ordinal,0–4; higher is more severe,101 means unable to rate and becomes missing; no 101 flag is used in the primary model.,False,raw aggregated pre-imputation value
+17,NP3PSTBL_COMBINED_MAX,ordinal,0–4; higher is more severe,101 means unable to rate and becomes missing; no 101 flag is used in the primary model.,False,raw aggregated pre-imputation value
+18,NHY_COMBINED_MAX,ordinal,0–5; higher is more advanced,101 means unable to rate and becomes missing; no 101 flag is used in the primary model.,False,raw aggregated pre-imputation value
+19,FEATPOSHYP,categorical,No; Yes; Uncertain,"Uncertain is a real response category, not missing.",False,raw aggregated pre-imputation value
+20,NP3TOT_COMBINED_MAX,numeric,0–132; higher is greater impairment,Item-level unable-to-rate handling precedes the total.,False,raw aggregated pre-imputation value
+21,NP4TOT,numeric,0–24; higher is greater complication burden,Wholly absent forms may be structural zero only under the documented therapy rule; otherwise missing is explicit.,True,raw aggregated pre-imputation value
+22,ANYFAMPD,categorical,No; Yes; missing,Conflicting eligible records use the documented positive-dominant rule.,True,raw aggregated pre-imputation value
+23,DXTREMOR,categorical,No; Yes; Unknown,Missing remains an explicit unknown state during preprocessing.,False,raw aggregated pre-imputation value
+24,DXBRADY,categorical,No; Yes; Unknown,Missing remains an explicit unknown state during preprocessing.,False,raw aggregated pre-imputation value
+25,DOMSIDE,categorical,Left; Right; Symmetric; Unknown,Unknown remains an explicit category.,False,raw aggregated pre-imputation value
+26,NP1CNST,ordinal,0–4; higher is more severe,Latest value is a separate sensitivity; never combine both representations.,False,raw aggregated pre-imputation value

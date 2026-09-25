@@ -108,9 +108,11 @@ descriptive and non-causal and cannot redefine the frozen model.
 
 ## Next task
 
-1. Synchronize the final notebooks, documentation, and approved shareable
-   results into `github_repo_export/`. Keep governed patient-level PPMI
-   artifacts out of any public export unless permission is confirmed.
+The final curated repository, including the user-approved patient-level LLM
+handoff artifacts, was committed and pushed to GitHub from
+`github_repo_export/` on 25 September 2026. No implementation task remains for
+the completed internal analysis. The next scientific step is independent
+validation or manuscript revision.
 
 The completed Notebooks 21–29c remain supporting exploratory evidence. They
 are not the manuscript analysis. Independent PPMI data or a future cohort is

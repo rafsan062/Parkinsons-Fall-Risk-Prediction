@@ -1,5 +1,5 @@
 {
-  "run_version": "final-notebook-12-shap-llm-handoff-v1",
+  "run_version": "final-notebook-12-shap-llm-handoff-v2-full-beeswarms",
   "source_model_manifest_sha256": "94533593c766aad3d529938dc06ec157a923f7ab64ebf6d7eb96b7008d3643db",
   "shap_version": "0.52.0",
   "patients": 1040,
@@ -20,7 +20,7 @@
         3
       ],
       "output_scale": "raw class score",
-      "max_additivity_error": 2.6645352591003757e-15
+      "max_additivity_error": 2.665e-15
     },
     "stage_1": {
       "model_file": "stage_1_pipeline.pkl",
@@ -37,7 +37,7 @@
         2
       ],
       "output_scale": "class probability",
-      "max_additivity_error": 7.271960811294775e-15
+      "max_additivity_error": 7.272e-15
     },
     "stage_2": {
       "model_file": "stage_2_pipeline.pkl",
@@ -54,10 +54,14 @@
         2
       ],
       "output_scale": "class probability",
-      "max_additivity_error": 2.192690473634684e-15
+      "max_additivity_error": 2.193e-15
     }
+  },
+  "plots": {
+    "direct_all_classes": "all 20 retained clinical groups; mean absolute SHAP overview",
+    "class_specific": "full beeswarm for every direct class, Stage 1 any fall, and Stage 2 recurrent fall"
   },
   "two_stage_interpretation": "Stage 1 and Stage 2 are separate hard-routed components. Do not add their SHAP values. Stage 2 applies only when Stage 1 predicts any fall.",
   "performance_boundary": "These full-cohort explanations are not performance estimates; use Notebook 07 outer evaluation.",
-  "governance": "NPZ files and patient_explanation_index.csv contain derived patient-level PPMI data. Do not publish them openly without confirming PPMI data-use permission."
+  "governance": "NPZ files, patient_explanation_index.csv, and patient_raw_inputs.csv contain patient-level PPMI-derived data. Public sharing was explicitly approved for this project export."
 }

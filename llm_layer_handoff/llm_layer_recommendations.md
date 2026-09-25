@@ -29,7 +29,9 @@ This handoff supports patient-facing explanations for the frozen 26-feature fall
 - `clinical_feature_dictionary.csv`: clinical meaning, coding, aggregation, missingness, and final-model membership.
 - `raw_input_schema.csv`: machine-readable raw-input contract.
 - `feature_map.csv`: mapping from transformed model columns to clinical source groups.
-- `shap_global_summary.csv` and PNG files: global descriptive summaries.
+- `shap_global_summary.csv` and PNG files: one complete direct all-class
+  magnitude overview and five full-feature beeswarms. Each beeswarm includes
+  every retained clinical group and names the fitted model and output class.
 - `shap_handoff_manifest.json` and `shap_validation.csv`: provenance and validation.
 
 ## Prompt construction order

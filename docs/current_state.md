@@ -44,8 +44,11 @@ or selecting models. Its results agree with the current final report.
 Notebook 12 explains the frozen direct, Stage 1, and Stage 2 models
 separately, verifies SHAP additivity, and packages grouped clinical
 contributions plus restricted patient-level handoff artifacts. All 8 saved
-checks passed. The methodological limitations are maintained separately in
-`docs/final_run/methodological_limitations.md`.
+checks passed. Its v2 figures retain one all-class direct overview and use
+full beeswarms for all three direct classes, Stage 1 any-fall, and Stage 2
+recurrent-fall outputs. Every figure names the fitted model and includes all
+clinical groups retained by that model. The methodological limitations are
+maintained separately in `docs/final_run/methodological_limitations.md`.
 
 ## Current evidence
 

@@ -407,6 +407,49 @@ importance, and only five diagnostic folds were used. The permutation results
 are descriptive, non-causal, and cannot be used for post-hoc feature removal
 or model selection.
 
+### 7.2 Final SHAP figures
+
+SHAP was calculated for the three frozen full-cohort model artifacts. Encoded
+columns and form-missing indicators were summed back to their clinical source
+groups. The direct and Stage 1 figures contain all 20 groups retained by those
+models; the Stage 2 figure contains all 13 groups it retained.
+
+The direct all-class overview reports mean absolute SHAP magnitude averaged
+across the three class outputs. Each beeswarm point is one patient. Position
+on the horizontal axis shows whether the contribution pushes the named model
+output higher or lower, while color shows the raw feature value. For
+categorical variables, colors represent category codes rather than a clinical
+ordering.
+
+**Direct balanced CatBoost: all retained features across all classes**
+
+![Direct CatBoost all-class SHAP overview](../../results/final_pipeline/08_interpretation_and_reporting/12_shap_and_llm_handoff/shap_summary_direct_all_classes.png)
+
+**Direct balanced CatBoost: contributions toward no fall**
+
+![Direct CatBoost no-fall SHAP beeswarm](../../results/final_pipeline/08_interpretation_and_reporting/12_shap_and_llm_handoff/shap_summary_direct_no_fall.png)
+
+**Direct balanced CatBoost: contributions toward rare fall**
+
+![Direct CatBoost rare-fall SHAP beeswarm](../../results/final_pipeline/08_interpretation_and_reporting/12_shap_and_llm_handoff/shap_summary_direct_rare_fall.png)
+
+**Direct balanced CatBoost: contributions toward recurrent fall**
+
+![Direct CatBoost recurrent-fall SHAP beeswarm](../../results/final_pipeline/08_interpretation_and_reporting/12_shap_and_llm_handoff/shap_summary_direct_recurrent_fall.png)
+
+**Two-stage Stage 1 balanced Extra Trees: contributions toward any fall**
+
+![Stage 1 Extra Trees any-fall SHAP beeswarm](../../results/final_pipeline/08_interpretation_and_reporting/12_shap_and_llm_handoff/shap_summary_stage1.png)
+
+**Two-stage Stage 2 random forest: contributions toward recurrent fall**
+
+![Stage 2 random forest recurrent-fall SHAP beeswarm](../../results/final_pipeline/08_interpretation_and_reporting/12_shap_and_llm_handoff/shap_summary_stage2.png)
+
+Stage 1 and Stage 2 SHAP values remain separate because the two-stage system
+uses hard routing; their contributions cannot be added into one valid SHAP
+explanation. These full-cohort explanations describe fitted-model behavior
+and are not additional performance estimates.
+
 ## 8. Changes from the previous revision analysis
 
 | Item | Previous revision | Final analysis | Reason |

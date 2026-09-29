@@ -1,5 +1,5 @@
 {
-  "run_version": "final-notebook-12-shap-llm-handoff-v5-concise-model-titles",
+  "run_version": "final-notebook-12-shap-llm-handoff-v6-arial-plot-fonts",
   "source_model_manifest_sha256": "94533593c766aad3d529938dc06ec157a923f7ab64ebf6d7eb96b7008d3643db",
   "shap_version": "0.52.0",
   "patients": 1040,
@@ -37,7 +37,7 @@
         2
       ],
       "output_scale": "class probability",
-      "max_additivity_error": 7.383e-15
+      "max_additivity_error": 7.216e-15
     },
     "stage_2": {
       "model_file": "stage_2_pipeline.pkl",
@@ -69,7 +69,9 @@
       "alignment": "centered across complete figure",
       "font_size_points": 18,
       "bold_segments": "model family and output class",
-      "weighting_labels": "omitted from figure titles; retained in model configuration documentation"
+      "weighting_labels": "omitted from figure titles; retained in model configuration documentation",
+      "general_font": "Arial Regular (thinnest installed Arial face)",
+      "feature_label_font": "Arial Narrow Regular (thinnest installed Arial Narrow face)"
     }
   },
   "two_stage_interpretation": "Stage 1 and Stage 2 are separate hard-routed components. Do not add their SHAP values. Stage 2 applies only when Stage 1 predicts any fall.",

@@ -44,14 +44,15 @@ or selecting models. Its results agree with the current final report.
 Notebook 12 explains the frozen direct, Stage 1, and Stage 2 models
 separately, verifies SHAP additivity, and packages grouped clinical
 contributions plus restricted patient-level handoff artifacts. All 9 saved
-checks passed. Its v5 figures retain one all-class direct overview and use
+checks passed. Its v6 figures retain one all-class direct overview and use
 full beeswarms for all three direct classes, Stage 1 any-fall, and Stage 2
 recurrent-fall outputs. All five beeswarms use a shared `-1.0` to `+1.0`
 x-axis range. Titles are centered across the complete figure at 18 points,
 with the model family and output class in bold. Weighting labels are kept in
-the model-configuration documentation rather than the figure titles. Every
-figure includes all clinical groups retained by that model. The methodological
-limitations are maintained separately in
+the model-configuration documentation rather than the figure titles. General
+text uses Arial Regular and feature labels use Arial Narrow Regular, the
+thinnest installed faces in those families. Every figure includes all clinical
+groups retained by that model. The methodological limitations are maintained separately in
 `docs/final_run/methodological_limitations.md`.
 
 ## Current evidence

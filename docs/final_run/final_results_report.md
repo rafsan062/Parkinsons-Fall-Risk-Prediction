@@ -465,6 +465,9 @@ chosen from the largest observed absolute plotted SHAP value (0.895) with
 rounded outward padding. The common range makes spread visually consistent;
 the direct multiclass and two-stage component values still use their own model
 output scales and should not be interpreted as exactly interchangeable units.
+General figure text uses Arial Regular and clinical feature labels use Arial
+Narrow Regular, the thinnest installed faces in those families. Model-family
+and output-class title segments use Arial Bold.
 
 **Direct CatBoost: all retained features across all classes**
 

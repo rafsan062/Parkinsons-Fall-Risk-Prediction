@@ -143,7 +143,7 @@ trail; the final export uses the following clean execution order:
 | 09 | `09_full_cohort_fit.ipynb` | Final-run full-cohort fit | Rerun internal selection on all 1,040 patients and fit the seed-42 direct and two-stage artifacts |
 | 10 | `10_model_interpretation.ipynb` | Final-run interpretation | Produce final model explanations and feature summaries without redefining the model |
 | 11 | `11_final_performance_summary.ipynb` | Complete; 7/7 checks passed | Summarize performance, sensitivities, statistical analysis, selected features, and model frequencies |
-| 12 | `12_shap_and_llm_handoff.ipynb` | Complete; 9/9 checks passed | Explain the frozen direct and two-stage components with SHAP on a shared beeswarm x-axis, use centered emphasized titles, and package the governed LLM handoff artifacts |
+| 12 | `12_shap_and_llm_handoff.ipynb` | Complete; 9/9 checks passed | Explain the frozen direct and two-stage components with SHAP on a shared beeswarm x-axis, centered emphasized titles, and Arial/Arial Narrow typography, then package the governed LLM handoff artifacts |
 
 All final publication notebooks live together in
 `notebooks/04_final_pipeline/06_final_run/`. Their filenames match the final

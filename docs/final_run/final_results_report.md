@@ -466,23 +466,23 @@ rounded outward padding. The common range makes spread visually consistent;
 the direct multiclass and two-stage component values still use their own model
 output scales and should not be interpreted as exactly interchangeable units.
 
-**Direct balanced CatBoost: all retained features across all classes**
+**Direct CatBoost: all retained features across all classes**
 
 ![Direct CatBoost all-class SHAP overview](../../results/final_pipeline/08_interpretation_and_reporting/12_shap_and_llm_handoff/shap_summary_direct_all_classes.png)
 
-**Direct balanced CatBoost: contributions toward no fall**
+**Direct CatBoost: contributions toward no fall**
 
 ![Direct CatBoost no-fall SHAP beeswarm](../../results/final_pipeline/08_interpretation_and_reporting/12_shap_and_llm_handoff/shap_summary_direct_no_fall.png)
 
-**Direct balanced CatBoost: contributions toward rare fall**
+**Direct CatBoost: contributions toward rare fall**
 
 ![Direct CatBoost rare-fall SHAP beeswarm](../../results/final_pipeline/08_interpretation_and_reporting/12_shap_and_llm_handoff/shap_summary_direct_rare_fall.png)
 
-**Direct balanced CatBoost: contributions toward recurrent fall**
+**Direct CatBoost: contributions toward recurrent fall**
 
 ![Direct CatBoost recurrent-fall SHAP beeswarm](../../results/final_pipeline/08_interpretation_and_reporting/12_shap_and_llm_handoff/shap_summary_direct_recurrent_fall.png)
 
-**Two-stage Stage 1 balanced Extra Trees: contributions toward any fall**
+**Two-stage Stage 1 Extra Trees: contributions toward any fall**
 
 ![Stage 1 Extra Trees any-fall SHAP beeswarm](../../results/final_pipeline/08_interpretation_and_reporting/12_shap_and_llm_handoff/shap_summary_stage1.png)
 

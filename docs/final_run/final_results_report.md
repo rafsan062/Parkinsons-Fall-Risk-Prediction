@@ -170,6 +170,13 @@ recall as the tie-break for the direct model and Stage 2, and any-fall recall
 for Stage 1. Remaining ties prefer fewer features and then the prespecified
 simpler model.
 
+Each outer split therefore produces one training-selected winner for the
+direct target, Stage 1, and Stage 2. That winner is refitted on all 728
+patients in that split's training set and scored once on its 312 untouched
+test patients. Repeating this process estimates the performance of the full
+selection procedure; it does not evaluate one fixed model configuration 20
+times.
+
 ## 3. Statistical feature analysis
 
 The requested univariate analysis tests whether each candidate differs across
@@ -250,6 +257,12 @@ information. For example, “tree-importance selection + random forest” uses a
 Extra-Trees model only to choose feature groups, then trains a separate random
 forest to make predictions.
 
+A frequency is the number of the 20 outer-training sets in which inner-fold
+validation selected that option. It is not a patient count, fold count, or
+number of outer test-set wins. Model-family and feature-pipeline frequencies
+are counted separately, so their most frequent entries must not be combined
+and treated as an observed winning configuration.
+
 | Target | Model-family frequency | Feature-pipeline frequency |
 | :--- | :--- | :--- |
 | Direct | Random forest 9; CatBoost 7; RBF SVM 2; Extra Trees 1; linear SVM 1 | FDR statistical screening 7; tree-importance selection 7; engineered representation 6 (4 interaction, 2 PCA) |
@@ -261,9 +274,11 @@ separately evaluated interaction and PCA candidates for a compact frequency
 summary. Each split still selected one specific named representation using
 only its training data.
 
-The variation between splits is evidence that the selected procedure is
-unstable. Pooled winner counts are descriptive and were not used to choose one
-global model.
+The variation shows that selection is sensitive to which patients are in the
+training set. These overlapping splits are not independent votes, and simple
+counts discard score margins, feature/model pairings, and hyperparameters.
+The frequencies therefore describe selection stability; they were not used
+to choose the final full-cohort models.
 
 ## 5. Sensitivity analyses
 
@@ -291,9 +306,35 @@ the cohort, or replacing maximum constipation with its latest value.
 ## 6. Final selected model configurations
 
 After outer evaluation and the sensitivity definitions were frozen, the same
-training-only selection procedure was rerun with five internal folds on all
-1,040 primary patients. This produced one fitted direct model and the two
-fitted components of the two-stage system.
+locked selection procedure was rerun with five internal folds on the complete
+primary cohort: 1,040 patients for the direct model and Stage 1, and the 328
+true fallers for Stage 2. This allowed each deployable model to use all
+patients applicable to its target rather than one outer-training subset. No
+outer-test score or winner-frequency vote entered this run.
+
+The full-cohort run followed the same three steps: retain two feature
+pipelines, retain two feature-pipeline/model-family combinations, and tune
+those finalists with the frozen parameter grids. The same macro-F1 and
+priority-recall rule then selected one configuration for each target:
+
+| Target | Two combinations entering focused tuning | Selected full-cohort configuration |
+| :--- | :--- | :--- |
+| Direct | All 26 + CatBoost; FDR + CatBoost | **FDR + balanced CatBoost** |
+| Stage 1 | FDR + Extra Trees; FDR + histogram gradient boosting | **FDR + balanced Extra Trees** |
+| Stage 2 | Tree selection + random forest; tree selection + Extra Trees | **Tree selection + unweighted random forest** |
+
+The selected hyperparameter setting need not have the absolute highest macro
+F1 when it is within 0.01 of that result. For the direct model, the chosen
+setting had mean inner-fold macro F1 0.532 and rare-fall recall 0.463, compared
+with 0.539 and 0.388 for the highest-macro-F1 setting. For Stage 1, Extra Trees
+had macro F1 0.686 and any-fall recall 0.649, compared with 0.690 and 0.646 for
+histogram gradient boosting. For Stage 2, the chosen random-forest setting had
+macro F1 0.686 and rare-fall recall 0.886, compared with 0.694 and 0.793 for
+the highest-macro-F1 setting. These choices apply the prespecified emphasis on
+rare-faller recognition and any-fall screening when macro F1 is nearly tied.
+
+The selected pipelines were then refitted on all applicable patients: 1,040
+for the direct model and Stage 1, and the 328 true fallers for Stage 2.
 
 The analysis did **not** establish one architecture as the overall winner:
 their paired macro-F1 interval included zero. The following are therefore the

@@ -1,5 +1,5 @@
 {
-  "run_version": "final-notebook-12-shap-llm-handoff-v2-full-beeswarms",
+  "run_version": "final-notebook-12-shap-llm-handoff-v3-shared-beeswarm-axis",
   "source_model_manifest_sha256": "94533593c766aad3d529938dc06ec157a923f7ab64ebf6d7eb96b7008d3643db",
   "shap_version": "0.52.0",
   "patients": 1040,
@@ -59,7 +59,12 @@
   },
   "plots": {
     "direct_all_classes": "all 20 retained clinical groups; mean absolute SHAP overview",
-    "class_specific": "full beeswarm for every direct class, Stage 1 any fall, and Stage 2 recurrent fall"
+    "class_specific": "full beeswarm for every direct class, Stage 1 any fall, and Stage 2 recurrent fall",
+    "shared_beeswarm_x_axis": {
+      "minimum": -1.0,
+      "maximum": 1.0,
+      "largest_observed_absolute_shap": 0.8953708789164201
+    }
   },
   "two_stage_interpretation": "Stage 1 and Stage 2 are separate hard-routed components. Do not add their SHAP values. Stage 2 applies only when Stage 1 predicts any fall.",
   "performance_boundary": "These full-cohort explanations are not performance estimates; use Notebook 07 outer evaluation.",

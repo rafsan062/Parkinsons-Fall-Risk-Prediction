@@ -460,7 +460,11 @@ across the three class outputs. Each beeswarm point is one patient. Position
 on the horizontal axis shows whether the contribution pushes the named model
 output higher or lower, while color shows the raw feature value. For
 categorical variables, colors represent category codes rather than a clinical
-ordering.
+ordering. All five beeswarms use the same `-1.0` to `+1.0` horizontal range,
+chosen from the largest observed absolute plotted SHAP value (0.895) with
+rounded outward padding. The common range makes spread visually consistent;
+the direct multiclass and two-stage component values still use their own model
+output scales and should not be interpreted as exactly interchangeable units.
 
 **Direct balanced CatBoost: all retained features across all classes**
 

@@ -63,3 +63,7 @@ Never present an internal imputation value as an observed clinical measurement. 
 ## Scientific boundaries
 
 All data-dependent preprocessing, feature selection, engineering, and tuning are fitted within training data. Outer test results do not select the model. The final estimates are internal validation because the cohort also supported prior exploratory development. See [`docs/final_run/methodological_limitations.md`](docs/final_run/methodological_limitations.md) for the maintained interpretation boundaries.
+
+## Data source and acknowledgements
+
+See [`docs/data_source_and_acknowledgements.md`](docs/data_source_and_acknowledgements.md) for the PPMI data-source citation, the required PPMI funding acknowledgement, official sources, and the distinct Seattle University project-support acknowledgement.

@@ -67,3 +67,7 @@ All data-dependent preprocessing, feature selection, engineering, and tuning are
 ## Data source and acknowledgements
 
 See [`docs/data_source_and_acknowledgements.md`](docs/data_source_and_acknowledgements.md) for the PPMI data-source citation, the required PPMI funding acknowledgement, official sources, and the distinct Seattle University project-support acknowledgement.
+
+## References
+
+See [`docs/references.md`](docs/references.md) for the QR-linked literature and resource citations supporting the project poster.
